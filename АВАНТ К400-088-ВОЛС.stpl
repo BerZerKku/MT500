@@ -3,25 +3,26 @@
   <DEVICE NAME="АВАНТ К400" DESC="Не задано" DISABLED="0" STATION_ADDRESS="1" COMMON_ADDRESS_OF_ASDU="1" ASDU_ADDRESS_BYTES="1" OBJ_ADDRESS_BYTES="2" COT_BYTES="1" STATION_ADDRESS_BYTES="1" INTERROGATION_CHECK="60" CLOCK_SYNCH="1" CLOCK_SYNCH_CHECK="15" SLEEP="0">
     <POINTS>
       <POINT NAME="Connect" ADDRESS="0" TYPE="1" CAT="1" NAMING=""/>
-      <POINT NAME="Неисправность" ADDRESS="201" TYPE="1" CAT="1" NAMING="Внутреннее  системное событие"/>
-      <POINT NAME="Предупреждение" ADDRESS="202" TYPE="1" CAT="1" NAMING="Внутреннее  системное событие"/>      
-      <POINT NAME="Команда передатчика" ADDRESS="203" TYPE="1" CAT="1" NAMING="Внутреннее  системное событие"/>
-      <POINT NAME="Команда приемника" ADDRESS="204" TYPE="1" CAT="1" NAMING="Внутреннее  системное событие"/>
-      <POINT NAME="ОБЩ Неиспр 0x0001: Неиспр.чт. FLASH" ADDRESS="301" TYPE="1" CAT="1" NAMING="Внутреннее  системное событие"/>
-      <POINT NAME="ОБЩ Неиспр 0x0002: Неиспр.зап.FLASH" ADDRESS="302" TYPE="1" CAT="1" NAMING="Внутреннее  системное событие"/>
-      <POINT NAME="ОБЩ Неиспр 0x0004: Неиспр.чт. PLIS" ADDRESS="303" TYPE="1" CAT="1" NAMING="Внутреннее  системное событие"/>
-      <POINT NAME="ОБЩ Неиспр 0x0008: Неиспр.зап.PLIS" ADDRESS="304" TYPE="1" CAT="1" NAMING="Внутреннее  системное событие"/>
-      <POINT NAME="ОБЩ Неиспр 0x0010: Неиспр.зап.2RAM" ADDRESS="305" TYPE="1" CAT="1" NAMING="Внутреннее  системное событие"/>
-      <POINT NAME="ОБЩ Неиспр 0x0020: Резерв" ADDRESS="306" TYPE="1" CAT="1" NAMING="Внутреннее  системное событие"/>
-      <POINT NAME="ОБЩ Неиспр 0x0040: Резерв" ADDRESS="307" TYPE="1" CAT="1" NAMING="Внутреннее  системное событие"/>
-      <POINT NAME="ОБЩ Неиспр 0x0080: Резерв" ADDRESS="308" TYPE="1" CAT="1" NAMING="Внутреннее  системное событие"/>
-      <POINT NAME="ОБЩ Неиспр 0x0100: Резерв" ADDRESS="309" TYPE="1" CAT="1" NAMING="Внутреннее  системное событие"/>
-      <POINT NAME="ОБЩ Неиспр 0x0200: Неиспр.чт. 2RAM" ADDRESS="310" TYPE="1" CAT="1" NAMING="Внутреннее  системное событие"/>
-      <POINT NAME="ОБЩ Неиспр 0x0400: Резерв" ADDRESS="312" TYPE="1" CAT="1" NAMING="Внутреннее  системное событие"/>
-      <POINT NAME="ОБЩ Неиспр 0x1000: Резерв" ADDRESS="313" TYPE="1" CAT="1" NAMING="Внутреннее  системное событие"/>
-      <POINT NAME="ОБЩ Неиспр 0x2000: Резерв" ADDRESS="314" TYPE="1" CAT="1" NAMING="Внутреннее  системное событие"/>
-      <POINT NAME="ОБЩ Неиспр 0x4000: Резерв" ADDRESS="315" TYPE="1" CAT="1" NAMING="Внутреннее  системное событие"/>
-      <POINT NAME="ОБЩ Неиспр 0x8000: Резерв" ADDRESS="316" TYPE="1" CAT="1" NAMING="Внутреннее  системное событие"/>
+      <POINT NAME="Неисправность" ADDRESS="201" TYPE="1" CAT="1" NAMING="Неисправность"/>
+      <POINT NAME="Предупреждение" ADDRESS="202" TYPE="1" CAT="1" NAMING="Предупреждение"/>      
+      <POINT NAME="Команда передатчика" ADDRESS="203" TYPE="1" CAT="1" NAMING="Команда передатчика"/>
+      <POINT NAME="Команда приемника" ADDRESS="204" TYPE="1" CAT="1" NAMING="Команда приемника"/>
+      <POINT NAME="ОБЩ Неиспр 0x0001" ADDRESS="301" TYPE="1" CAT="1" NAMING="Неиспр.чт. FLASH"/>
+      <POINT NAME="ОБЩ Неиспр 0x0002" ADDRESS="302" TYPE="1" CAT="1" NAMING="Неиспр.зап.FLASH"/>
+      <POINT NAME="ОБЩ Неиспр 0x0004" ADDRESS="303" TYPE="1" CAT="1" NAMING="Неиспр.чт. PLIS"/>
+      <POINT NAME="ОБЩ Неиспр 0x0008" ADDRESS="304" TYPE="1" CAT="1" NAMING="Неиспр.зап.PLIS"/>
+      <POINT NAME="ОБЩ Неиспр 0x0010" ADDRESS="305" TYPE="1" CAT="1" NAMING="Неиспр.зап.2RAM"/>
+      <POINT NAME="ОБЩ Неиспр 0x0020" ADDRESS="306" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Неиспр 0x0040" ADDRESS="307" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Неиспр 0x0080" ADDRESS="308" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Неиспр 0x0100" ADDRESS="309" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Неиспр 0x0200" ADDRESS="310" TYPE="1" CAT="1" NAMING="Неиспр.чт. 2RAM"/>
+      <POINT NAME="ОБЩ Неиспр 0x0400" ADDRESS="311" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Неиспр 0x0800" ADDRESS="312" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Неиспр 0x1000" ADDRESS="313" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Неиспр 0x2000" ADDRESS="314" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Неиспр 0x4000" ADDRESS="315" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Неиспр 0x8000" ADDRESS="316" TYPE="1" CAT="1" NAMING="Резерв"/>
       <POINT NAME="ОБЩ Предуп 0x0001: Установите часы" ADDRESS="317" TYPE="1" CAT="1" NAMING="Внутреннее  системное событие"/>
       <POINT NAME="ОБЩ Предуп 0x0002: Отказ резерв.лин" ADDRESS="318" TYPE="1" CAT="1" NAMING="Внутреннее  системное событие"/>
       <POINT NAME="ОБЩ Предуп 0x0004: Кольцо 1 наруш." ADDRESS="319" TYPE="1" CAT="1" NAMING="Внутреннее  системное событие"/>
