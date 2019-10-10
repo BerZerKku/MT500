@@ -1,204 +1,263 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <DEVICES PROTOCOL="МЭК-60870-5-101">
-  <DEVICE NAME="АВАНТ-К400-088-B" DESC="" DISABLED="0" TZ="" STATION_ADDRESS="1" COMMON_ADDRESS_OF_ASDU="1" ASDU_ADDRESS_BYTES="1" OBJ_ADDRESS_BYTES="2" COT_BYTES="1" STATION_ADDRESS_BYTES="1" INTERROGATION_CHECK="60" CLOCK_SYNCH="1" CLOCK_SYNCH_CHECK="60" SLEEP="0">
+  <DEVICE NAME="АВАНТ-РЗСК-1xx-B-v2" DESC="" DISABLED="0" TZ="" STATION_ADDRESS="1" COMMON_ADDRESS_OF_ASDU="1" ASDU_ADDRESS_BYTES="1" OBJ_ADDRESS_BYTES="2" COT_BYTES="1" STATION_ADDRESS_BYTES="1" INTERROGATION_CHECK="60" CLOCK_SYNCH="1" CLOCK_SYNCH_CHECK="60" SLEEP="0">
     <POINTS>
       <POINT NAME="Connect" ADDRESS="0" TYPE="1" CAT="1" NAMING=""/>
       <POINT NAME="Индикация неисправности" ADDRESS="201" TYPE="1" CAT="1" NAMING="Индикация неисправности"/>
       <POINT NAME="Индикация предупреждения" ADDRESS="202" TYPE="1" CAT="1" NAMING="Индикация предупреждения"/>
       <POINT NAME="Индикация команды передатчика" ADDRESS="203" TYPE="1" CAT="1" NAMING="Индикация команды передатчика"/>
       <POINT NAME="Индикация команды приемника" ADDRESS="204" TYPE="1" CAT="1" NAMING="Индикация команды приемника"/>
-      <POINT NAME="ОБЩ Неиспр 0x0001 Неиспр чт  FLASH" ADDRESS="301" TYPE="1" CAT="1" NAMING="ОБЩ Неиспр 0x0001"/>
-      <POINT NAME="ОБЩ Неиспр 0x0002 Неиспр зап FLASH" ADDRESS="302" TYPE="1" CAT="1" NAMING="ОБЩ Неиспр 0x0002"/>
-      <POINT NAME="ОБЩ Неиспр 0x0004 Неиспр чт  PLIS" ADDRESS="303" TYPE="1" CAT="1" NAMING="ОБЩ Неиспр 0x0004"/>
-      <POINT NAME="ОБЩ Неиспр 0x0008 Неиспр зап PLIS" ADDRESS="304" TYPE="1" CAT="1" NAMING="ОБЩ Неиспр 0x0008"/>
-      <POINT NAME="ОБЩ Неиспр 0x0010 Неиспр зап 2RAM" ADDRESS="305" TYPE="1" CAT="1" NAMING="ОБЩ Неиспр 0x0010"/>
-      <POINT NAME="ОБЩ Неиспр 0x0020 Резерв" ADDRESS="306" TYPE="1" CAT="1" NAMING="ОБЩ Неиспр 0x0020"/>
-      <POINT NAME="ОБЩ Неиспр 0x0040 Резерв" ADDRESS="307" TYPE="1" CAT="1" NAMING="ОБЩ Неиспр 0x0040"/>
-      <POINT NAME="ОБЩ Неиспр 0x0080 Резерв" ADDRESS="308" TYPE="1" CAT="1" NAMING="ОБЩ Неиспр 0x0080"/>
-      <POINT NAME="ОБЩ Неиспр 0x0100 Неиспр DSP 2RAM" ADDRESS="309" TYPE="1" CAT="1" NAMING="ОБЩ Неиспр 0x0100"/>
-      <POINT NAME="ОБЩ Неиспр 0x0200 Неиспр чт  2RAM" ADDRESS="310" TYPE="1" CAT="1" NAMING="ОБЩ Неиспр 0x0200"/>
-      <POINT NAME="ОБЩ Неиспр 0x0400 Резерв" ADDRESS="311" TYPE="1" CAT="1" NAMING="ОБЩ Неиспр 0x0400"/>
-      <POINT NAME="ОБЩ Неиспр 0x0800 Низкое напр вых" ADDRESS="312" TYPE="1" CAT="1" NAMING="ОБЩ Неиспр 0x0800"/>
-      <POINT NAME="ОБЩ Неиспр 0x1000 Высокое напр вых" ADDRESS="313" TYPE="1" CAT="1" NAMING="ОБЩ Неиспр 0x1000"/>
-      <POINT NAME="ОБЩ Неиспр 0x2000 Резерв" ADDRESS="314" TYPE="1" CAT="1" NAMING="ОБЩ Неиспр 0x2000"/>
-      <POINT NAME="ОБЩ Неиспр 0x4000 Резерв" ADDRESS="315" TYPE="1" CAT="1" NAMING="ОБЩ Неиспр 0x4000"/>
-      <POINT NAME="ОБЩ Неиспр 0x8000 Резерв" ADDRESS="316" TYPE="1" CAT="1" NAMING="ОБЩ Неиспр 0x8000"/>
-      <POINT NAME="ОБЩ Предуп 0x0001 Резерв" ADDRESS="317" TYPE="1" CAT="1" NAMING="ОБЩ Предуп 0x0001"/>
-      <POINT NAME="ОБЩ Предуп 0x0002 Резерв" ADDRESS="318" TYPE="1" CAT="1" NAMING="ОБЩ Предуп 0x0002"/>
-      <POINT NAME="ОБЩ Предуп 0x0004 Резерв" ADDRESS="319" TYPE="1" CAT="1" NAMING="ОБЩ Предуп 0x0004"/>
-      <POINT NAME="ОБЩ Предуп 0x0008 Резерв" ADDRESS="320" TYPE="1" CAT="1" NAMING="ОБЩ Предуп 0x0008"/>
-      <POINT NAME="ОБЩ Предуп 0x0010 Резерв" ADDRESS="321" TYPE="1" CAT="1" NAMING="ОБЩ Предуп 0x0010"/>
-      <POINT NAME="ОБЩ Предуп 0x0020 Резерв" ADDRESS="322" TYPE="1" CAT="1" NAMING="ОБЩ Предуп 0x0020"/>
-      <POINT NAME="ОБЩ Предуп 0x0040 Резерв" ADDRESS="323" TYPE="1" CAT="1" NAMING="ОБЩ Предуп 0x0040"/>
-      <POINT NAME="ОБЩ Предуп 0x0080 Резерв" ADDRESS="324" TYPE="1" CAT="1" NAMING="ОБЩ Предуп 0x0080"/>
-      <POINT NAME="ОБЩ Предуп 0x0100 Резерв" ADDRESS="325" TYPE="1" CAT="1" NAMING="ОБЩ Предуп 0x0100"/>
-      <POINT NAME="ОБЩ Предуп 0x0200 Резерв" ADDRESS="326" TYPE="1" CAT="1" NAMING="ОБЩ Предуп 0x0200"/>
-      <POINT NAME="ОБЩ Предуп 0x0400 Установите часы" ADDRESS="327" TYPE="1" CAT="1" NAMING="ОБЩ Предуп 0x0400"/>
-      <POINT NAME="ОБЩ Предуп 0x0800 Резерв" ADDRESS="328" TYPE="1" CAT="1" NAMING="ОБЩ Предуп 0x0800"/>
-      <POINT NAME="ОБЩ Предуп 0x1000 Резерв" ADDRESS="329" TYPE="1" CAT="1" NAMING="ОБЩ Предуп 0x1000"/>
-      <POINT NAME="ОБЩ Предуп 0x2000 Резерв" ADDRESS="330" TYPE="1" CAT="1" NAMING="ОБЩ Предуп 0x2000"/>
-      <POINT NAME="ОБЩ Предуп 0x4000 Резерв" ADDRESS="331" TYPE="1" CAT="1" NAMING="ОБЩ Предуп 0x4000"/>
-      <POINT NAME="ОБЩ Предуп 0x8000 Резерв" ADDRESS="332" TYPE="1" CAT="1" NAMING="ОБЩ Предуп 0x8000"/>
+      <POINT NAME="Вход управления 1" ADDRESS="205" TYPE="1" CAT="1" NAMING="Пуск ПРМ"/>
+      <POINT NAME="Вход управления 2" ADDRESS="206" TYPE="1" CAT="1" NAMING="Сброс ИНД"/>
+      <POINT NAME="Вход управления 3" ADDRESS="207" TYPE="1" CAT="1" NAMING="Упр ТМ"/>
+      <POINT NAME="ОБЩ Неиспр 0x0001" ADDRESS="301" TYPE="1" CAT="1" NAMING="Неиспр чт  FLASH"/>
+      <POINT NAME="ОБЩ Неиспр 0x0002" ADDRESS="302" TYPE="1" CAT="1" NAMING="Неиспр зап FLASH"/>
+      <POINT NAME="ОБЩ Неиспр 0x0004" ADDRESS="303" TYPE="1" CAT="1" NAMING="Неиспр чт  PLIS"/>
+      <POINT NAME="ОБЩ Неиспр 0x0008" ADDRESS="304" TYPE="1" CAT="1" NAMING="Неиспр зап PLIS"/>
+      <POINT NAME="ОБЩ Неиспр 0x0010" ADDRESS="305" TYPE="1" CAT="1" NAMING="Неиспр зап 2RAM"/>
+      <POINT NAME="ОБЩ Неиспр 0x0020" ADDRESS="306" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Неиспр 0x0040" ADDRESS="307" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Неиспр 0x0080" ADDRESS="308" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Неиспр 0x0100" ADDRESS="309" TYPE="1" CAT="1" NAMING="Неиспр DSP 2RAM"/>
+      <POINT NAME="ОБЩ Неиспр 0x0200" ADDRESS="310" TYPE="1" CAT="1" NAMING="Неиспр чт 2RAM"/>
+      <POINT NAME="ОБЩ Неиспр 0x0400" ADDRESS="311" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Неиспр 0x0800" ADDRESS="312" TYPE="1" CAT="1" NAMING="Низкое напр вых"/>
+      <POINT NAME="ОБЩ Неиспр 0x1000" ADDRESS="313" TYPE="1" CAT="1" NAMING="Высокое напр вых"/>
+      <POINT NAME="ОБЩ Неиспр 0x2000" ADDRESS="314" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Неиспр 0x4000" ADDRESS="315" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Неиспр 0x8000" ADDRESS="316" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Предуп 0x0001" ADDRESS="317" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Предуп 0x0002" ADDRESS="318" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Предуп 0x0004" ADDRESS="319" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Предуп 0x0008" ADDRESS="320" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Предуп 0x0010" ADDRESS="321" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Предуп 0x0020" ADDRESS="322" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Предуп 0x0040" ADDRESS="323" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Предуп 0x0080" ADDRESS="324" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Предуп 0x0100" ADDRESS="325" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Предуп 0x0200" ADDRESS="326" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Предуп 0x0400" ADDRESS="327" TYPE="1" CAT="1" NAMING="Установите часы"/>
+      <POINT NAME="ОБЩ Предуп 0x0800" ADDRESS="328" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Предуп 0x1000" ADDRESS="329" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Предуп 0x2000" ADDRESS="330" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Предуп 0x4000" ADDRESS="331" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ОБЩ Предуп 0x8000" ADDRESS="332" TYPE="1" CAT="1" NAMING="Резерв"/>
       <POINT NAME="Передатчик подключен" ADDRESS="400" TYPE="1" CAT="1" NAMING="Передатчик подключен"/>
-      <POINT NAME="ПРД Неиспр 0x0001 Нет блока БСК" ADDRESS="401" TYPE="1" CAT="1" NAMING="ПРД Неиспр 0x0001"/>
-      <POINT NAME="ПРД Неиспр 0x0002 Неиспр верс  БСК" ADDRESS="402" TYPE="1" CAT="1" NAMING="ПРД Неиспр 0x0002"/>
-      <POINT NAME="ПРД Неиспр 0x0004 Резерв" ADDRESS="403" TYPE="1" CAT="1" NAMING="ПРД Неиспр 0x0004"/>
-      <POINT NAME="ПРД Неиспр 0x0008 Резерв" ADDRESS="404" TYPE="1" CAT="1" NAMING="ПРД Неиспр 0x0008"/>
-      <POINT NAME="ПРД Неиспр 0x0010 Резерв" ADDRESS="405" TYPE="1" CAT="1" NAMING="ПРД Неиспр 0x0010"/>
-      <POINT NAME="ПРД Неиспр 0x0020 Резерв" ADDRESS="406" TYPE="1" CAT="1" NAMING="ПРД Неиспр 0x0020"/>
-      <POINT NAME="ПРД Неиспр 0x0040 Резерв" ADDRESS="407" TYPE="1" CAT="1" NAMING="ПРД Неиспр 0x0040"/>
-      <POINT NAME="ПРД Неиспр 0x0080 Резерв" ADDRESS="408" TYPE="1" CAT="1" NAMING="ПРД Неиспр 0x0080"/>
-      <POINT NAME="ПРД Неиспр 0x0100 Неиспр чт команд" ADDRESS="409" TYPE="1" CAT="1" NAMING="ПРД Неиспр 0x0100"/>
-      <POINT NAME="ПРД Неиспр 0x0200 Неиспр выкл Тест" ADDRESS="410" TYPE="1" CAT="1" NAMING="ПРД Неиспр 0x0200"/>
-      <POINT NAME="ПРД Неиспр 0x0400 Неиспр вкл  Тест" ADDRESS="411" TYPE="1" CAT="1" NAMING="ПРД Неиспр 0x0400"/>
-      <POINT NAME="ПРД Неиспр 0x0800 Неиспр вход  ком" ADDRESS="412" TYPE="1" CAT="1" NAMING="ПРД Неиспр 0x0800"/>
-      <POINT NAME="ПРД Неиспр 0x1000 Резерв" ADDRESS="413" TYPE="1" CAT="1" NAMING="ПРД Неиспр 0x1000"/>
-      <POINT NAME="ПРД Неиспр 0x2000 Резерв" ADDRESS="414" TYPE="1" CAT="1" NAMING="ПРД Неиспр 0x2000"/>
-      <POINT NAME="ПРД Неиспр 0x4000 Резерв" ADDRESS="415" TYPE="1" CAT="1" NAMING="ПРД Неиспр 0x4000"/>
-      <POINT NAME="ПРД Неиспр 0x8000 Резерв" ADDRESS="416" TYPE="1" CAT="1" NAMING="ПРД Неиспр 0x8000"/>
-      <POINT NAME="ПРД Предуп 0x0001 Резерв" ADDRESS="417" TYPE="1" CAT="1" NAMING="ПРД Предуп 0x0001"/>
-      <POINT NAME="ПРД Предуп 0x0002 Ошибка работы ЦС" ADDRESS="418" TYPE="1" CAT="1" NAMING="ПРД Предуп 0x0002"/>
-      <POINT NAME="ПРД Предуп 0x0004 Вход RX ЦС пуст" ADDRESS="419" TYPE="1" CAT="1" NAMING="ПРД Предуп 0x0004"/>
-      <POINT NAME="ПРД Предуп 0x0008 Резерв" ADDRESS="420" TYPE="1" CAT="1" NAMING="ПРД Предуп 0x0008"/>
-      <POINT NAME="ПРД Предуп 0x0010 Резерв" ADDRESS="421" TYPE="1" CAT="1" NAMING="ПРД Предуп 0x0010"/>
-      <POINT NAME="ПРД Предуп 0x0020 Резерв" ADDRESS="422" TYPE="1" CAT="1" NAMING="ПРД Предуп 0x0020"/>
-      <POINT NAME="ПРД Предуп 0x0040 Резерв" ADDRESS="423" TYPE="1" CAT="1" NAMING="ПРД Предуп 0x0040"/>
-      <POINT NAME="ПРД Предуп 0x0080 Резерв" ADDRESS="424" TYPE="1" CAT="1" NAMING="ПРД Предуп 0x0080"/>
-      <POINT NAME="ПРД Предуп 0x0100 Резерв" ADDRESS="425" TYPE="1" CAT="1" NAMING="ПРД Предуп 0x0100"/>
-      <POINT NAME="ПРД Предуп 0x0200 Резерв" ADDRESS="426" TYPE="1" CAT="1" NAMING="ПРД Предуп 0x0200"/>
-      <POINT NAME="ПРД Предуп 0x0400 Резерв" ADDRESS="427" TYPE="1" CAT="1" NAMING="ПРД Предуп 0x0400"/>
-      <POINT NAME="ПРД Предуп 0x0800 Резерв" ADDRESS="428" TYPE="1" CAT="1" NAMING="ПРД Предуп 0x0800"/>
-      <POINT NAME="ПРД Предуп 0x1000 Резерв" ADDRESS="429" TYPE="1" CAT="1" NAMING="ПРД Предуп 0x1000"/>
-      <POINT NAME="ПРД Предуп 0x2000 Резерв" ADDRESS="430" TYPE="1" CAT="1" NAMING="ПРД Предуп 0x2000"/>
-      <POINT NAME="ПРД Предуп 0x4000 Резерв" ADDRESS="431" TYPE="1" CAT="1" NAMING="ПРД Предуп 0x4000"/>
-      <POINT NAME="ПРД Предуп 0x8000 Резерв" ADDRESS="432" TYPE="1" CAT="1" NAMING="ПРД Предуп 0x8000"/>
-      <POINT NAME="Индикация команды передатчика 1" ADDRESS="450" TYPE="1" CAT="1" NAMING="Индикация команды передатчика 1"/>
-      <POINT NAME="Индикация команды передатчика 2" ADDRESS="451" TYPE="1" CAT="1" NAMING="Индикация команды передатчика 2"/>
-      <POINT NAME="Индикация команды передатчика 3" ADDRESS="452" TYPE="1" CAT="1" NAMING="Индикация команды передатчика 3"/>
-      <POINT NAME="Индикация команды передатчика 4" ADDRESS="453" TYPE="1" CAT="1" NAMING="Индикация команды передатчика 4"/>
-      <POINT NAME="Индикация команды передатчика 5" ADDRESS="454" TYPE="1" CAT="1" NAMING="Индикация команды передатчика 5"/>
-      <POINT NAME="Индикация команды передатчика 6" ADDRESS="455" TYPE="1" CAT="1" NAMING="Индикация команды передатчика 6"/>
-      <POINT NAME="Индикация команды передатчика 7" ADDRESS="456" TYPE="1" CAT="1" NAMING="Индикация команды передатчика 7"/>
-      <POINT NAME="Индикация команды передатчика 8" ADDRESS="457" TYPE="1" CAT="1" NAMING="Индикация команды передатчика 8"/>
+      <POINT NAME="ПРД Неиспр 0x0001" ADDRESS="401" TYPE="1" CAT="1" NAMING="Нет блока БСК"/>
+      <POINT NAME="ПРД Неиспр 0x0002" ADDRESS="402" TYPE="1" CAT="1" NAMING="Неиспр верс БСК"/>
+      <POINT NAME="ПРД Неиспр 0x0004" ADDRESS="403" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРД Неиспр 0x0008" ADDRESS="404" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРД Неиспр 0x0010" ADDRESS="405" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРД Неиспр 0x0020" ADDRESS="406" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРД Неиспр 0x0040" ADDRESS="407" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРД Неиспр 0x0080" ADDRESS="408" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРД Неиспр 0x0100" ADDRESS="409" TYPE="1" CAT="1" NAMING="Неиспр чт команд"/>
+      <POINT NAME="ПРД Неиспр 0x0200" ADDRESS="410" TYPE="1" CAT="1" NAMING="Неиспр выкл Тест"/>
+      <POINT NAME="ПРД Неиспр 0x0400" ADDRESS="411" TYPE="1" CAT="1" NAMING="еиспр вкл Тест"/>
+      <POINT NAME="ПРД Неиспр 0x0800" ADDRESS="412" TYPE="1" CAT="1" NAMING="Неиспр вход ком"/>
+      <POINT NAME="ПРД Неиспр 0x1000" ADDRESS="413" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРД Неиспр 0x2000" ADDRESS="414" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРД Неиспр 0x4000" ADDRESS="415" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРД Неиспр 0x8000" ADDRESS="416" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРД Предуп 0x0001" ADDRESS="417" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРД Предуп 0x0002" ADDRESS="418" TYPE="1" CAT="1" NAMING="Ошибка работы ЦС"/>
+      <POINT NAME="ПРД Предуп 0x0004" ADDRESS="419" TYPE="1" CAT="1" NAMING="Вход RX ЦС пуст"/>
+      <POINT NAME="ПРД Предуп 0x0008" ADDRESS="420" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРД Предуп 0x0010" ADDRESS="421" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРД Предуп 0x0020" ADDRESS="422" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРД Предуп 0x0040" ADDRESS="423" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРД Предуп 0x0080" ADDRESS="424" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРД Предуп 0x0100" ADDRESS="425" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРД Предуп 0x0200" ADDRESS="426" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРД Предуп 0x0400" ADDRESS="427" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРД Предуп 0x0800" ADDRESS="428" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРД Предуп 0x1000" ADDRESS="429" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРД Предуп 0x2000" ADDRESS="430" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРД Предуп 0x4000" ADDRESS="431" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРД Предуп 0x8000" ADDRESS="432" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды передатчика 01" ADDRESS="450" TYPE="1" CAT="1" NAMING="Индикация команды передатчика 01"/>
+      <POINT NAME="Индикация команды передатчика 02" ADDRESS="451" TYPE="1" CAT="1" NAMING="Индикация команды передатчика 02"/>
+      <POINT NAME="Индикация команды передатчика 03" ADDRESS="452" TYPE="1" CAT="1" NAMING="Индикация команды передатчика 03"/>
+      <POINT NAME="Индикация команды передатчика 04" ADDRESS="453" TYPE="1" CAT="1" NAMING="Индикация команды передатчика 04"/>
+      <POINT NAME="Индикация команды передатчика 05" ADDRESS="454" TYPE="1" CAT="1" NAMING="Индикация команды передатчика 05"/>
+      <POINT NAME="Индикация команды передатчика 06" ADDRESS="455" TYPE="1" CAT="1" NAMING="Индикация команды передатчика 06"/>
+      <POINT NAME="Индикация команды передатчика 07" ADDRESS="456" TYPE="1" CAT="1" NAMING="Индикация команды передатчика 07"/>
+      <POINT NAME="Индикация команды передатчика 08" ADDRESS="457" TYPE="1" CAT="1" NAMING="Индикация команды передатчика 08"/>
+      <POINT NAME="Индикация команды передатчика 09" ADDRESS="458" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды передатчика 10" ADDRESS="459" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды передатчика 11" ADDRESS="460" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды передатчика 12" ADDRESS="461" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды передатчика 13" ADDRESS="462" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды передатчика 14" ADDRESS="463" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды передатчика 15" ADDRESS="464" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды передатчика 16" ADDRESS="465" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды передатчика 17" ADDRESS="466" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды передатчика 18" ADDRESS="467" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды передатчика 19" ADDRESS="468" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды передатчика 20" ADDRESS="469" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды передатчика 21" ADDRESS="470" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды передатчика 22" ADDRESS="471" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды передатчика 23" ADDRESS="472" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды передатчика 24" ADDRESS="473" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды передатчика 25" ADDRESS="474" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды передатчика 26" ADDRESS="475" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды передатчика 27" ADDRESS="476" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды передатчика 28" ADDRESS="477" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды передатчика 29" ADDRESS="478" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды передатчика 30" ADDRESS="479" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды передатчика 31" ADDRESS="480" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды передатчика 32" ADDRESS="481" TYPE="1" CAT="1" NAMING="Резерв"/>
       <POINT NAME="Передатчик режим Выведен" ADDRESS="485" TYPE="1" CAT="1" NAMING="Передатчик режим Выведен"/>
       <POINT NAME="Передатчик режим Введен" ADDRESS="486" TYPE="1" CAT="1" NAMING="Передатчик режим Введен"/>
       <POINT NAME="Передатчик режим Тест" ADDRESS="487" TYPE="1" CAT="1" NAMING="Передатчик режим Тест"/>
       <POINT NAME="Приемник подключен" ADDRESS="500" TYPE="1" CAT="1" NAMING="Приемник подключен"/>
-      <POINT NAME="ПРМ Неиспр 0x0001 Нет блока БСК" ADDRESS="501" TYPE="1" CAT="1" NAMING="ПРМ Неиспр 0x0001"/>
-      <POINT NAME="ПРМ Неиспр 0x0002 Неиспр верс  БСК" ADDRESS="502" TYPE="1" CAT="1" NAMING="ПРМ Неиспр 0x0002"/>
-      <POINT NAME="ПРМ Неиспр 0x0004 Нет КС" ADDRESS="503" TYPE="1" CAT="1" NAMING="ПРМ Неиспр 0x0004"/>
-      <POINT NAME="ПРМ Неиспр 0x0008 Резерв" ADDRESS="504" TYPE="1" CAT="1" NAMING="ПРМ Неиспр 0x0008"/>
-      <POINT NAME="ПРМ Неиспр 0x0010 Резерв" ADDRESS="505" TYPE="1" CAT="1" NAMING="ПРМ Неиспр 0x0010"/>
-      <POINT NAME="ПРМ Неиспр 0x0020 Резерв" ADDRESS="506" TYPE="1" CAT="1" NAMING="ПРМ Неиспр 0x0020"/>
-      <POINT NAME="ПРМ Неиспр 0x0040 Резерв" ADDRESS="507" TYPE="1" CAT="1" NAMING="ПРМ Неиспр 0x0040"/>
-      <POINT NAME="ПРМ Неиспр 0x0080 Резерв" ADDRESS="508" TYPE="1" CAT="1" NAMING="ПРМ Неиспр 0x0080"/>
-      <POINT NAME="ПРМ Неиспр 0x0100 Неиспр зап  БСК" ADDRESS="509" TYPE="1" CAT="1" NAMING="ПРМ Неиспр 0x0100"/>
-      <POINT NAME="ПРМ Неиспр 0x0200 Неиспр выкл  ком" ADDRESS="510" TYPE="1" CAT="1" NAMING="ПРМ Неиспр 0x0200"/>
-      <POINT NAME="ПРМ Неиспр 0x0400 Неиспр вкл  ком" ADDRESS="511" TYPE="1" CAT="1" NAMING="ПРМ Неиспр 0x0400"/>
-      <POINT NAME="ПРМ Неиспр 0x0800 Неиспр контр ком" ADDRESS="512" TYPE="1" CAT="1" NAMING="ПРМ Неиспр 0x0800"/>
-      <POINT NAME="ПРМ Неиспр 0x1000 Резерв" ADDRESS="513" TYPE="1" CAT="1" NAMING="ПРМ Неиспр 0x1000"/>
-      <POINT NAME="ПРМ Неиспр 0x2000 Резерв" ADDRESS="514" TYPE="1" CAT="1" NAMING="ПРМ Неиспр 0x2000"/>
-      <POINT NAME="ПРМ Неиспр 0x4000 Резерв" ADDRESS="515" TYPE="1" CAT="1" NAMING="ПРМ Неиспр 0x4000"/>
-      <POINT NAME="ПРМ Неиспр 0x8000 Резерв" ADDRESS="516" TYPE="1" CAT="1" NAMING="ПРМ Неиспр 0x8000"/>
-      <POINT NAME="ПРМ Предуп 0x0001 Сниж  уровня ПРМ" ADDRESS="517" TYPE="1" CAT="1" NAMING="ПРМ Предуп 0x0001"/>
-      <POINT NAME="ПРМ Предуп 0x0002 Резерв" ADDRESS="518" TYPE="1" CAT="1" NAMING="ПРМ Предуп 0x0002"/>
-      <POINT NAME="ПРМ Предуп 0x0004 Резерв" ADDRESS="519" TYPE="1" CAT="1" NAMING="ПРМ Предуп 0x0004"/>
-      <POINT NAME="ПРМ Предуп 0x0008 Резерв" ADDRESS="520" TYPE="1" CAT="1" NAMING="ПРМ Предуп 0x0008"/>
-      <POINT NAME="ПРМ Предуп 0x0010 Резерв" ADDRESS="521" TYPE="1" CAT="1" NAMING="ПРМ Предуп 0x0010"/>
-      <POINT NAME="ПРМ Предуп 0x0020 Резерв" ADDRESS="522" TYPE="1" CAT="1" NAMING="ПРМ Предуп 0x0020"/>
-      <POINT NAME="ПРМ Предуп 0x0040 Резерв" ADDRESS="523" TYPE="1" CAT="1" NAMING="ПРМ Предуп 0x0040"/>
-      <POINT NAME="ПРМ Предуп 0x0080 Резерв" ADDRESS="524" TYPE="1" CAT="1" NAMING="ПРМ Предуп 0x0080"/>
-      <POINT NAME="ПРМ Предуп 0x0100 Резерв" ADDRESS="525" TYPE="1" CAT="1" NAMING="ПРМ Предуп 0x0100"/>
-      <POINT NAME="ПРМ Предуп 0x0200 Резерв" ADDRESS="526" TYPE="1" CAT="1" NAMING="ПРМ Предуп 0x0200"/>
-      <POINT NAME="ПРМ Предуп 0x0400 Резерв" ADDRESS="527" TYPE="1" CAT="1" NAMING="ПРМ Предуп 0x0400"/>
-      <POINT NAME="ПРМ Предуп 0x0800 Резерв" ADDRESS="528" TYPE="1" CAT="1" NAMING="ПРМ Предуп 0x0800"/>
-      <POINT NAME="ПРМ Предуп 0x1000 Резерв" ADDRESS="529" TYPE="1" CAT="1" NAMING="ПРМ Предуп 0x1000"/>
-      <POINT NAME="ПРМ Предуп 0x2000 Резерв" ADDRESS="530" TYPE="1" CAT="1" NAMING="ПРМ Предуп 0x2000"/>
-      <POINT NAME="ПРМ Предуп 0x4000 Резерв" ADDRESS="531" TYPE="1" CAT="1" NAMING="ПРМ Предуп 0x4000"/>
-      <POINT NAME="ПРМ Предуп 0x8000 Резерв" ADDRESS="532" TYPE="1" CAT="1" NAMING="ПРМ Предуп 0x8000"/>
-      <POINT NAME="Индикация команды приемника 1" ADDRESS="550" TYPE="1" CAT="1" NAMING="Индикация команды приемника 1"/>
-      <POINT NAME="Индикация команды приемника 2" ADDRESS="551" TYPE="1" CAT="1" NAMING="Индикация команды приемника 2"/>
-      <POINT NAME="Индикация команды приемника 3" ADDRESS="552" TYPE="1" CAT="1" NAMING="Индикация команды приемника 3"/>
-      <POINT NAME="Индикация команды приемника 4" ADDRESS="553" TYPE="1" CAT="1" NAMING="Индикация команды приемника 4"/>
-      <POINT NAME="Индикация команды приемника 5" ADDRESS="554" TYPE="1" CAT="1" NAMING="Индикация команды приемника 5"/>
-      <POINT NAME="Индикация команды приемника 6" ADDRESS="555" TYPE="1" CAT="1" NAMING="Индикация команды приемника 6"/>
-      <POINT NAME="Индикация команды приемника 7" ADDRESS="556" TYPE="1" CAT="1" NAMING="Индикация команды приемника 7"/>
-      <POINT NAME="Индикация команды приемника 8" ADDRESS="557" TYPE="1" CAT="1" NAMING="Индикация команды приемника 8"/>
+      <POINT NAME="ПРМ Неиспр 0x0001" ADDRESS="501" TYPE="1" CAT="1" NAMING="Нет блока БСК"/>
+      <POINT NAME="ПРМ Неиспр 0x0002" ADDRESS="502" TYPE="1" CAT="1" NAMING="Неиспр верс  БСК"/>
+      <POINT NAME="ПРМ Неиспр 0x0004" ADDRESS="503" TYPE="1" CAT="1" NAMING="Нет КС"/>
+      <POINT NAME="ПРМ Неиспр 0x0008" ADDRESS="504" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРМ Неиспр 0x0010" ADDRESS="505" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРМ Неиспр 0x0020" ADDRESS="506" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРМ Неиспр 0x0040" ADDRESS="507" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРМ Неиспр 0x0080" ADDRESS="508" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРМ Неиспр 0x0100" ADDRESS="509" TYPE="1" CAT="1" NAMING="Неиспр зап БСК"/>
+      <POINT NAME="ПРМ Неиспр 0x0200" ADDRESS="510" TYPE="1" CAT="1" NAMING="Неиспр выкл ком"/>
+      <POINT NAME="ПРМ Неиспр 0x0400" ADDRESS="511" TYPE="1" CAT="1" NAMING="Неиспр вкл ком"/>
+      <POINT NAME="ПРМ Неиспр 0x0800" ADDRESS="512" TYPE="1" CAT="1" NAMING="Неиспр контр ком"/>
+      <POINT NAME="ПРМ Неиспр 0x1000" ADDRESS="513" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРМ Неиспр 0x2000" ADDRESS="514" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРМ Неиспр 0x4000" ADDRESS="515" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРМ Неиспр 0x8000" ADDRESS="516" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРМ Предуп 0x0001" ADDRESS="517" TYPE="1" CAT="1" NAMING="Сниж уровня ПРМ"/>
+      <POINT NAME="ПРМ Предуп 0x0002" ADDRESS="518" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРМ Предуп 0x0004" ADDRESS="519" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРМ Предуп 0x0008" ADDRESS="520" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРМ Предуп 0x0010" ADDRESS="521" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРМ Предуп 0x0020" ADDRESS="522" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРМ Предуп 0x0040" ADDRESS="523" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРМ Предуп 0x0080" ADDRESS="524" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРМ Предуп 0x0100" ADDRESS="525" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРМ Предуп 0x0200" ADDRESS="526" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРМ Предуп 0x0400" ADDRESS="527" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРМ Предуп 0x0800" ADDRESS="528" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРМ Предуп 0x1000" ADDRESS="529" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРМ Предуп 0x2000" ADDRESS="530" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРМ Предуп 0x4000" ADDRESS="531" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ПРМ Предуп 0x8000" ADDRESS="532" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды приемника 01" ADDRESS="550" TYPE="1" CAT="1" NAMING="Индикация команды приемника 01"/>
+      <POINT NAME="Индикация команды приемника 02" ADDRESS="551" TYPE="1" CAT="1" NAMING="Индикация команды приемника 02"/>
+      <POINT NAME="Индикация команды приемника 03" ADDRESS="552" TYPE="1" CAT="1" NAMING="Индикация команды приемника 03"/>
+      <POINT NAME="Индикация команды приемника 04" ADDRESS="553" TYPE="1" CAT="1" NAMING="Индикация команды приемника 04"/>
+      <POINT NAME="Индикация команды приемника 05" ADDRESS="554" TYPE="1" CAT="1" NAMING="Индикация команды приемника 05"/>
+      <POINT NAME="Индикация команды приемника 06" ADDRESS="555" TYPE="1" CAT="1" NAMING="Индикация команды приемника 06"/>
+      <POINT NAME="Индикация команды приемника 07" ADDRESS="556" TYPE="1" CAT="1" NAMING="Индикация команды приемника 07"/>
+      <POINT NAME="Индикация команды приемника 08" ADDRESS="557" TYPE="1" CAT="1" NAMING="Индикация команды приемника 08"/>
+      <POINT NAME="Индикация команды приемника 09" ADDRESS="558" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды приемника 10" ADDRESS="559" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды приемника 11" ADDRESS="560" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды приемника 12" ADDRESS="561" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды приемника 13" ADDRESS="562" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды приемника 14" ADDRESS="563" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды приемника 15" ADDRESS="564" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды приемника 16" ADDRESS="565" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды приемника 17" ADDRESS="566" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды приемника 18" ADDRESS="567" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды приемника 19" ADDRESS="568" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды приемника 20" ADDRESS="569" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды приемника 21" ADDRESS="570" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды приемника 22" ADDRESS="571" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды приемника 23" ADDRESS="572" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды приемника 24" ADDRESS="573" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды приемника 25" ADDRESS="574" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды приемника 26" ADDRESS="575" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды приемника 27" ADDRESS="576" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды приемника 28" ADDRESS="577" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды приемника 29" ADDRESS="578" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды приемника 30" ADDRESS="579" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды приемника 31" ADDRESS="580" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Индикация команды приемника 32" ADDRESS="581" TYPE="1" CAT="1" NAMING="Резерв"/>
       <POINT NAME="Приемник режим Выведен" ADDRESS="585" TYPE="1" CAT="1" NAMING="Приемник режим Выведен"/>
       <POINT NAME="Приемник режим Готов" ADDRESS="586" TYPE="1" CAT="1" NAMING="Приемник режим Готов"/>
       <POINT NAME="Приемник режим Введен" ADDRESS="587" TYPE="1" CAT="1" NAMING="Приемник режим Введен"/>
       <POINT NAME="Приемник режим Тест" ADDRESS="588" TYPE="1" CAT="1" NAMING="Приемник режим Тест"/>
       <POINT NAME="Защита подлкючена" ADDRESS="600" TYPE="1" CAT="1" NAMING="Защита подключена"/>
-      <POINT NAME="ЗАЩ Неиспр 0x0001 Нет блока БСЗ" ADDRESS="601" TYPE="1" CAT="1" NAMING="ЗАЩ Неиспр 0x0001"/>
-      <POINT NAME="ЗАЩ Неиспр 0x0002 Неиспр верс БСЗ" ADDRESS="602" TYPE="1" CAT="1" NAMING="ЗАЩ Неиспр 0x0002"/>
-      <POINT NAME="ЗАЩ Неиспр 0x0004 Неиспр перекл" ADDRESS="603" TYPE="1" CAT="1" NAMING="ЗАЩ Неиспр 0x0004"/>
-      <POINT NAME="ЗАЩ Неиспр 0x0008 Резерв" ADDRESS="604" TYPE="1" CAT="1" NAMING="ЗАЩ Неиспр 0x0008"/>
-      <POINT NAME="ЗАЩ Неиспр 0x0010 Резерв" ADDRESS="605" TYPE="1" CAT="1" NAMING="ЗАЩ Неиспр 0x0010"/>
-      <POINT NAME="ЗАЩ Неиспр 0x0020 Резерв" ADDRESS="606" TYPE="1" CAT="1" NAMING="ЗАЩ Неиспр 0x0020"/>
-      <POINT NAME="ЗАЩ Неиспр 0x0040 Резерв" ADDRESS="607" TYPE="1" CAT="1" NAMING="ЗАЩ Неиспр 0x0040"/>
-      <POINT NAME="ЗАЩ Неиспр 0x0080 Резерв" ADDRESS="608" TYPE="1" CAT="1" NAMING="ЗАЩ Неиспр 0x0080"/>
-      <POINT NAME="ЗАЩ Неиспр 0x0100 Неиспр вход ПУСК" ADDRESS="609" TYPE="1" CAT="1" NAMING="ЗАЩ Неиспр 0x0100"/>
-      <POINT NAME="ЗАЩ Неиспр 0x0200 Неиспр вход СТОП" ADDRESS="610" TYPE="1" CAT="1" NAMING="ЗАЩ Неиспр 0x0200"/>
-      <POINT NAME="ЗАЩ Неиспр 0x0400 Резерв" ADDRESS="611" TYPE="1" CAT="1" NAMING="ЗАЩ Неиспр 0x0400"/>
-      <POINT NAME="ЗАЩ Неиспр 0x0800 Неиспр цепь ВЫХ" ADDRESS="612" TYPE="1" CAT="1" NAMING="ЗАЩ Неиспр 0x0800"/>
-      <POINT NAME="ЗАЩ Неиспр 0x1000 Резерв" ADDRESS="613" TYPE="1" CAT="1" NAMING="ЗАЩ Неиспр 0x1000"/>
-      <POINT NAME="ЗАЩ Неиспр 0x2000 Неиспр зап ВЫХ" ADDRESS="614" TYPE="1" CAT="1" NAMING="ЗАЩ Неиспр 0x2000"/>
-      <POINT NAME="ЗАЩ Неиспр 0x4000 Нет сигнала РЗ" ADDRESS="615" TYPE="1" CAT="1" NAMING="ЗАЩ Неиспр 0x4000"/>
-      <POINT NAME="ЗАЩ Неиспр 0x8000 Удал неисправен" ADDRESS="616" TYPE="1" CAT="1" NAMING="ЗАЩ Неиспр 0x8000"/>
-      <POINT NAME="ЗАЩ Предуп 0x0001 Низкий уров РЗ" ADDRESS="617" TYPE="1" CAT="1" NAMING="ЗАЩ Предуп 0x0001"/>
-      <POINT NAME="ЗАЩ Предуп 0x0002 Нет сигнала МАН" ADDRESS="618" TYPE="1" CAT="1" NAMING="ЗАЩ Предуп 0x0002"/>
-      <POINT NAME="ЗАЩ Предуп 0x0004 Резерв" ADDRESS="619" TYPE="1" CAT="1" NAMING="ЗАЩ Предуп 0x0004"/>
-      <POINT NAME="ЗАЩ Предуп 0x0008 Резерв" ADDRESS="620" TYPE="1" CAT="1" NAMING="ЗАЩ Предуп 0x0008"/>
-      <POINT NAME="ЗАЩ Предуп 0x0010 Резерв" ADDRESS="621" TYPE="1" CAT="1" NAMING="ЗАЩ Предуп 0x0010"/>
-      <POINT NAME="ЗАЩ Предуп 0x0020 Резерв" ADDRESS="622" TYPE="1" CAT="1" NAMING="ЗАЩ Предуп 0x0020"/>
-      <POINT NAME="ЗАЩ Предуп 0x0040 Резерв" ADDRESS="623" TYPE="1" CAT="1" NAMING="ЗАЩ Предуп 0x0040"/>
-      <POINT NAME="ЗАЩ Предуп 0x0080 Резерв" ADDRESS="624" TYPE="1" CAT="1" NAMING="ЗАЩ Предуп 0x0080"/>
-      <POINT NAME="ЗАЩ Предуп 0x0100 Резерв" ADDRESS="625" TYPE="1" CAT="1" NAMING="ЗАЩ Предуп 0x0100"/>
-      <POINT NAME="ЗАЩ Предуп 0x0200 Резерв" ADDRESS="626" TYPE="1" CAT="1" NAMING="ЗАЩ Предуп 0x0200"/>
-      <POINT NAME="ЗАЩ Предуп 0x0400 Резерв" ADDRESS="627" TYPE="1" CAT="1" NAMING="ЗАЩ Предуп 0x0400"/>
-      <POINT NAME="ЗАЩ Предуп 0x0800 Резерв" ADDRESS="628" TYPE="1" CAT="1" NAMING="ЗАЩ Предуп 0x0800"/>
-      <POINT NAME="ЗАЩ Предуп 0x1000 Резерв" ADDRESS="629" TYPE="1" CAT="1" NAMING="ЗАЩ Предуп 0x1000"/>
-      <POINT NAME="ЗАЩ Предуп 0x2000 Резерв" ADDRESS="630" TYPE="1" CAT="1" NAMING="ЗАЩ Предуп 0x2000"/>
-      <POINT NAME="ЗАЩ Предуп 0x4000 Резерв" ADDRESS="631" TYPE="1" CAT="1" NAMING="ЗАЩ Предуп 0x4000"/>
-      <POINT NAME="ЗАЩ Предуп 0x8000 Резерв" ADDRESS="632" TYPE="1" CAT="1" NAMING="ПРМ Предуп 0x8000"/>
+      <POINT NAME="ЗАЩ Неиспр 0x0001" ADDRESS="601" TYPE="1" CAT="1" NAMING="Нет блока БСЗ"/>
+      <POINT NAME="ЗАЩ Неиспр 0x0002" ADDRESS="602" TYPE="1" CAT="1" NAMING="Неиспр верс БСЗ"/>
+      <POINT NAME="ЗАЩ Неиспр 0x0004" ADDRESS="603" TYPE="1" CAT="1" NAMING="Неиспр перекл"/>
+      <POINT NAME="ЗАЩ Неиспр 0x0008" ADDRESS="604" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ЗАЩ Неиспр 0x0010" ADDRESS="605" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ЗАЩ Неиспр 0x0020" ADDRESS="606" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ЗАЩ Неиспр 0x0040" ADDRESS="607" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ЗАЩ Неиспр 0x0080" ADDRESS="608" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ЗАЩ Неиспр 0x0100" ADDRESS="609" TYPE="1" CAT="1" NAMING="Неиспр вход ПУСК"/>
+      <POINT NAME="ЗАЩ Неиспр 0x0200" ADDRESS="610" TYPE="1" CAT="1" NAMING="Неиспр вход СТОП"/>
+      <POINT NAME="ЗАЩ Неиспр 0x0400" ADDRESS="611" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ЗАЩ Неиспр 0x0800" ADDRESS="612" TYPE="1" CAT="1" NAMING="Неиспр цепь ВЫХ"/>
+      <POINT NAME="ЗАЩ Неиспр 0x1000" ADDRESS="613" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ЗАЩ Неиспр 0x2000" ADDRESS="614" TYPE="1" CAT="1" NAMING="Неиспр зап ВЫХ"/>
+      <POINT NAME="ЗАЩ Неиспр 0x4000" ADDRESS="615" TYPE="1" CAT="1" NAMING="Нет сигнала РЗ"/>
+      <POINT NAME="ЗАЩ Неиспр 0x8000" ADDRESS="616" TYPE="1" CAT="1" NAMING="Удал неисправен"/>
+      <POINT NAME="ЗАЩ Предуп 0x0001" ADDRESS="617" TYPE="1" CAT="1" NAMING="Низкий уров РЗ"/>
+      <POINT NAME="ЗАЩ Предуп 0x0002" ADDRESS="618" TYPE="1" CAT="1" NAMING="Нет сигнала МАН"/>
+      <POINT NAME="ЗАЩ Предуп 0x0004" ADDRESS="619" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ЗАЩ Предуп 0x0008" ADDRESS="620" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ЗАЩ Предуп 0x0010" ADDRESS="621" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ЗАЩ Предуп 0x0020" ADDRESS="622" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ЗАЩ Предуп 0x0040" ADDRESS="623" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ЗАЩ Предуп 0x0080" ADDRESS="624" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ЗАЩ Предуп 0x0100" ADDRESS="625" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ЗАЩ Предуп 0x0200" ADDRESS="626" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ЗАЩ Предуп 0x0400" ADDRESS="627" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ЗАЩ Предуп 0x0800" ADDRESS="628" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ЗАЩ Предуп 0x1000" ADDRESS="629" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ЗАЩ Предуп 0x2000" ADDRESS="630" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ЗАЩ Предуп 0x4000" ADDRESS="631" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="ЗАЩ Предуп 0x8000" ADDRESS="632" TYPE="1" CAT="1" NAMING="Резерв"/>
       <POINT NAME="Пуск" ADDRESS="633" TYPE="1" CAT="1" NAMING="Пуск"/>
       <POINT NAME="Останов" ADDRESS="634" TYPE="1" CAT="1" NAMING="Останов"/>
       <POINT NAME="Манипуляция" ADDRESS="635" TYPE="1" CAT="1" NAMING="Манипуляция"/>
       <POINT NAME="Передача" ADDRESS="636" TYPE="1" CAT="1" NAMING="Передача"/>
       <POINT NAME="Прием" ADDRESS="637" TYPE="1" CAT="1" NAMING="Прием"/>
       <POINT NAME="Выход" ADDRESS="638" TYPE="1" CAT="1" NAMING="Выход"/>
-      <POINT NAME="Событие 01 Вкл питания перезап" ADDRESS="700" TYPE="1" CAT="1" NAMING="Событие 01"/>
-      <POINT NAME="Событие 02 Выключение питания" ADDRESS="701" TYPE="1" CAT="1" NAMING="Событие 02"/>
-      <POINT NAME="Событие 03 Изменение режима раб" ADDRESS="702" TYPE="1" CAT="1" NAMING="Событие 03"/>
-      <POINT NAME="Событие 04 Удаленный неисправен" ADDRESS="703" TYPE="1" CAT="1" NAMING="Событие 04"/>
-      <POINT NAME="Событие 05 Неиспр теста ПРД" ADDRESS="704" TYPE="1" CAT="1" NAMING="Событие 05"/>
-      <POINT NAME="Событие 06 Неиспр теста ПРМ" ADDRESS="705" TYPE="1" CAT="1" NAMING="Событие 06"/>
-      <POINT NAME="Событие 07 Неиспр блока БСЗ" ADDRESS="706" TYPE="1" CAT="1" NAMING="Событие 07"/>
-      <POINT NAME="Событие 08 Неиспр блока БСК" ADDRESS="707" TYPE="1" CAT="1" NAMING="Событие 08"/>
-      <POINT NAME="Событие 09 Неиспр перекл-ей БСЗ" ADDRESS="708" TYPE="1" CAT="1" NAMING="Событие 09"/>
-      <POINT NAME="Событие 10 Нет сигнала манипул" ADDRESS="709" TYPE="1" CAT="1" NAMING="Событие 10"/>
-      <POINT NAME="Событие 11 Неиспр выходной цепи" ADDRESS="710" TYPE="1" CAT="1" NAMING="Событие 11"/>
-      <POINT NAME="Событие 12 Нет РЗ 5 сек" ADDRESS="711" TYPE="1" CAT="1" NAMING="Событие 12"/>
-      <POINT NAME="Событие 13 Отсут-е сигнала Пуск" ADDRESS="712" TYPE="1" CAT="1" NAMING="Событие 13"/>
-      <POINT NAME="Событие 14 Отсут-е сигнала Стоп" ADDRESS="713" TYPE="1" CAT="1" NAMING="Событие 14"/>
-      <POINT NAME="Событие 15 Неиспр чтения команд" ADDRESS="714" TYPE="1" CAT="1" NAMING="Событие 15"/>
-      <POINT NAME="Событие 16 Сниж ур КЧ" ADDRESS="715" TYPE="1" CAT="1" NAMING="Событие 16"/>
-      <POINT NAME="Событие 17 Неиспр  работы DSP" ADDRESS="716" TYPE="1" CAT="1" NAMING="Событие 17"/>
-      <POINT NAME="Событие 18 Восстан-е работы DSP" ADDRESS="717" TYPE="1" CAT="1" NAMING="Событие 18"/>
-      <POINT NAME="Событие 19 Низкое напр  выхода" ADDRESS="718" TYPE="1" CAT="1" NAMING="Событие 19"/>
-      <POINT NAME="Событие 20 Высокое напр  выхода" ADDRESS="719" TYPE="1" CAT="1" NAMING="Событие 20"/>
-      <POINT NAME="Событие 21 Нет КЧ 5 сек" ADDRESS="720" TYPE="1" CAT="1" NAMING="Событие 21"/>
-      <POINT NAME="Событие 22 Нет КЧ" ADDRESS="721" TYPE="1" CAT="1" NAMING="Событие 22"/>
-      <POINT NAME="Событие 23 Восстан-е КЧ" ADDRESS="722" TYPE="1" CAT="1" NAMING="Событие 23"/>
-      <POINT NAME="Событие 24 Восст ур  КЧ" ADDRESS="723" TYPE="1" CAT="1" NAMING="Событие 24"/>
-      <POINT NAME="Событие 25 Неиспр чт зап 2RAM" ADDRESS="724" TYPE="1" CAT="1" NAMING="Событие 25"/>
-      <POINT NAME="Событие 26 Неиспр чт зап ПЛИС" ADDRESS="725" TYPE="1" CAT="1" NAMING="Событие 26"/>
-      <POINT NAME="Событие 27 Неиспр чт зап FLASH" ADDRESS="726" TYPE="1" CAT="1" NAMING="Событие 27"/>
-      <POINT NAME="Событие 28 Неисправность часов" ADDRESS="727" TYPE="1" CAT="1" NAMING="Событие 28"/>
-      <POINT NAME="Событие 29 Сниж ур РЗ" ADDRESS="728" TYPE="1" CAT="1" NAMING="Событие 29"/>
-      <POINT NAME="Событие 30 Восстан-е РЗ" ADDRESS="729" TYPE="1" CAT="1" NAMING="Событие 30"/>
-      <POINT NAME="Событие 31 Нет РЗ" ADDRESS="730" TYPE="1" CAT="1" NAMING="Событие 31"/>
-      <POINT NAME="Событие 32 Восст ур РЗ" ADDRESS="731" TYPE="1" CAT="1" NAMING="Событие 32"/>
+      <POINT NAME="Событие 01" ADDRESS="700" TYPE="1" CAT="1" NAMING="Вкл. питания перезап"/>
+      <POINT NAME="Событие 02" ADDRESS="701" TYPE="1" CAT="1" NAMING="Выключение питания"/>
+      <POINT NAME="Событие 03" ADDRESS="702" TYPE="1" CAT="1" NAMING="Изменение режима раб"/>
+      <POINT NAME="Событие 04" ADDRESS="703" TYPE="1" CAT="1" NAMING="Удаленный неисправен"/>
+      <POINT NAME="Событие 05" ADDRESS="704" TYPE="1" CAT="1" NAMING="Неиспр теста ПРД"/>
+      <POINT NAME="Событие 06" ADDRESS="705" TYPE="1" CAT="1" NAMING="Неиспр теста ПРМ"/>
+      <POINT NAME="Событие 07" ADDRESS="706" TYPE="1" CAT="1" NAMING="Неиспр блока БСЗ"/>
+      <POINT NAME="Событие 08" ADDRESS="707" TYPE="1" CAT="1" NAMING="Неиспр блока БСК"/>
+      <POINT NAME="Событие 09" ADDRESS="708" TYPE="1" CAT="1" NAMING="Неиспр перекл-ей БСЗ"/>
+      <POINT NAME="Событие 10" ADDRESS="709" TYPE="1" CAT="1" NAMING="Нет сигнала манипул."/>
+      <POINT NAME="Событие 11" ADDRESS="710" TYPE="1" CAT="1" NAMING="Неиспр выходной цепи"/>
+      <POINT NAME="Событие 12" ADDRESS="711" TYPE="1" CAT="1" NAMING="Нет РЗ 5 сек"/>
+      <POINT NAME="Событие 13" ADDRESS="712" TYPE="1" CAT="1" NAMING="Отсут-е сигнала Пуск"/>
+      <POINT NAME="Событие 14" ADDRESS="713" TYPE="1" CAT="1" NAMING="Отсут-е сигнала Стоп"/>
+      <POINT NAME="Событие 15" ADDRESS="714" TYPE="1" CAT="1" NAMING="Неиспр чтения команд"/>
+      <POINT NAME="Событие 16" ADDRESS="715" TYPE="1" CAT="1" NAMING="Сниж. ур. КЧ"/>
+      <POINT NAME="Событие 17" ADDRESS="716" TYPE="1" CAT="1" NAMING="Неиспр. работы DSP"/>
+      <POINT NAME="Событие 18" ADDRESS="717" TYPE="1" CAT="1" NAMING="Восстан-е работы DSP"/>
+      <POINT NAME="Событие 19" ADDRESS="718" TYPE="1" CAT="1" NAMING="Низкое напр. выхода"/>
+      <POINT NAME="Событие 20" ADDRESS="719" TYPE="1" CAT="1" NAMING="Высокое напр. выхода"/>
+      <POINT NAME="Событие 21" ADDRESS="720" TYPE="1" CAT="1" NAMING="Нет КЧ 5 сек"/>
+      <POINT NAME="Событие 22" ADDRESS="721" TYPE="1" CAT="1" NAMING="Нет КЧ"/>
+      <POINT NAME="Событие 23" ADDRESS="722" TYPE="1" CAT="1" NAMING="Восстан-е КЧ"/>
+      <POINT NAME="Событие 24" ADDRESS="723" TYPE="1" CAT="1" NAMING="Восст. ур.КЧ"/>
+      <POINT NAME="Событие 25" ADDRESS="724" TYPE="1" CAT="1" NAMING="Неиспр чт зап 2RAM"/>
+      <POINT NAME="Событие 26" ADDRESS="725" TYPE="1" CAT="1" NAMING="Неиспр чт зап ПЛИС"/>
+      <POINT NAME="Событие 27" ADDRESS="726" TYPE="1" CAT="1" NAMING="Неиспр чт зап FLASH"/>
+      <POINT NAME="Событие 28" ADDRESS="727" TYPE="1" CAT="1" NAMING="Неисправность часов"/>
+      <POINT NAME="Событие 29" ADDRESS="728" TYPE="1" CAT="1" NAMING="Сниж. ур. РЗ"/>
+      <POINT NAME="Событие 30" ADDRESS="729" TYPE="1" CAT="1" NAMING="Восстан-е РЗ"/>
+      <POINT NAME="Событие 31" ADDRESS="730" TYPE="1" CAT="1" NAMING="Нет РЗ"/>
+      <POINT NAME="Событие 32" ADDRESS="731" TYPE="1" CAT="1" NAMING="Восст. ур.РЗ"/>
+      <POINT NAME="Событие 33" ADDRESS="732" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Событие 34" ADDRESS="733" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Событие 35" ADDRESS="734" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Событие 36" ADDRESS="735" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Событие 37" ADDRESS="736" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Событие 38" ADDRESS="737" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Событие 39" ADDRESS="738" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Событие 40" ADDRESS="739" TYPE="1" CAT="1" NAMING="Резерв"/>
       <POINT NAME="Команда передатчика 01 (ДВ)" ADDRESS="740" TYPE="1" CAT="1" NAMING="Команда передатчика 01 (ДВ)"/>
       <POINT NAME="Команда передатчика 02 (ДВ)" ADDRESS="741" TYPE="1" CAT="1" NAMING="Команда передатчика 02 (ДВ)"/>
       <POINT NAME="Команда передатчика 03 (ДВ)" ADDRESS="742" TYPE="1" CAT="1" NAMING="Команда передатчика 03 (ДВ)"/>
@@ -207,6 +266,30 @@
       <POINT NAME="Команда передатчика 06 (ДВ)" ADDRESS="745" TYPE="1" CAT="1" NAMING="Команда передатчика 06 (ДВ)"/>
       <POINT NAME="Команда передатчика 07 (ДВ)" ADDRESS="746" TYPE="1" CAT="1" NAMING="Команда передатчика 07 (ДВ)"/>
       <POINT NAME="Команда передатчика 08 (ДВ)" ADDRESS="747" TYPE="1" CAT="1" NAMING="Команда передатчика 08 (ДВ)"/>
+      <POINT NAME="Команда передатчика 09 (ДВ)" ADDRESS="748" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 10 (ДВ)" ADDRESS="749" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 11 (ДВ)" ADDRESS="750" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 12 (ДВ)" ADDRESS="751" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 13 (ДВ)" ADDRESS="752" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 14 (ДВ)" ADDRESS="753" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 15 (ДВ)" ADDRESS="754" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 16 (ДВ)" ADDRESS="755" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 17 (ДВ)" ADDRESS="756" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 18 (ДВ)" ADDRESS="757" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 19 (ДВ)" ADDRESS="758" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 20 (ДВ)" ADDRESS="759" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 21 (ДВ)" ADDRESS="760" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 22 (ДВ)" ADDRESS="761" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 23 (ДВ)" ADDRESS="762" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 24 (ДВ)" ADDRESS="763" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 25 (ДВ)" ADDRESS="764" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 26 (ДВ)" ADDRESS="765" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 27 (ДВ)" ADDRESS="766" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 28 (ДВ)" ADDRESS="767" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 29 (ДВ)" ADDRESS="768" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 30 (ДВ)" ADDRESS="769" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 31 (ДВ)" ADDRESS="770" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 32 (ДВ)" ADDRESS="771" TYPE="1" CAT="1" NAMING="Резерв"/>
       <POINT NAME="Команда передатчика 01 (ЦПП)" ADDRESS="772" TYPE="1" CAT="1" NAMING="Команда передатчика 01 (ЦПП)"/>
       <POINT NAME="Команда передатчика 02 (ЦПП)" ADDRESS="773" TYPE="1" CAT="1" NAMING="Команда передатчика 02 (ЦПП)"/>
       <POINT NAME="Команда передатчика 03 (ЦПП)" ADDRESS="774" TYPE="1" CAT="1" NAMING="Команда передатчика 03 (ЦПП)"/>
@@ -214,7 +297,31 @@
       <POINT NAME="Команда передатчика 05 (ЦПП)" ADDRESS="776" TYPE="1" CAT="1" NAMING="Команда передатчика 05 (ЦПП)"/>
       <POINT NAME="Команда передатчика 06 (ЦПП)" ADDRESS="777" TYPE="1" CAT="1" NAMING="Команда передатчика 06 (ЦПП)"/>
       <POINT NAME="Команда передатчика 07 (ЦПП)" ADDRESS="778" TYPE="1" CAT="1" NAMING="Команда передатчика 07 (ЦПП)"/>
-      <POINT NAME="Команда передатчика 08 (ЦПП)" ADDRESS="779" TYPE="1" CAT="1" NAMING="Команда передатчика 08 (ЦПП)"/>    
+      <POINT NAME="Команда передатчика 08 (ЦПП)" ADDRESS="779" TYPE="1" CAT="1" NAMING="Команда передатчика 08 (ЦПП)"/>
+      <POINT NAME="Команда передатчика 09 (ЦПП)" ADDRESS="780" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 10 (ЦПП)" ADDRESS="781" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 11 (ЦПП)" ADDRESS="782" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 12 (ЦПП)" ADDRESS="783" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 13 (ЦПП)" ADDRESS="784" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 14 (ЦПП)" ADDRESS="785" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 15 (ЦПП)" ADDRESS="786" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 16 (ЦПП)" ADDRESS="787" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 17 (ЦПП)" ADDRESS="788" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 18 (ЦПП)" ADDRESS="789" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 19 (ЦПП)" ADDRESS="790" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 20 (ЦПП)" ADDRESS="791" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 21 (ЦПП)" ADDRESS="792" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 22 (ЦПП)" ADDRESS="793" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 23 (ЦПП)" ADDRESS="794" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 24 (ЦПП)" ADDRESS="795" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 25 (ЦПП)" ADDRESS="796" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 26 (ЦПП)" ADDRESS="797" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 27 (ЦПП)" ADDRESS="798" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 28 (ЦПП)" ADDRESS="799" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 29 (ЦПП)" ADDRESS="800" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 30 (ЦПП)" ADDRESS="801" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 31 (ЦПП)" ADDRESS="802" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда передатчика 32 (ЦПП)" ADDRESS="803" TYPE="1" CAT="1" NAMING="Резерв"/>
       <POINT NAME="Команда приемника 01" ADDRESS="804" TYPE="1" CAT="1" NAMING="Команда приемника 01"/>
       <POINT NAME="Команда приемника 02" ADDRESS="805" TYPE="1" CAT="1" NAMING="Команда приемника 02"/>
       <POINT NAME="Команда приемника 03" ADDRESS="806" TYPE="1" CAT="1" NAMING="Команда приемника 03"/>
@@ -223,6 +330,36 @@
       <POINT NAME="Команда приемника 06" ADDRESS="809" TYPE="1" CAT="1" NAMING="Команда приемника 06"/>
       <POINT NAME="Команда приемника 07" ADDRESS="810" TYPE="1" CAT="1" NAMING="Команда приемника 07"/>
       <POINT NAME="Команда приемника 08" ADDRESS="811" TYPE="1" CAT="1" NAMING="Команда приемника 08"/>
+      <POINT NAME="Команда приемника 09" ADDRESS="812" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда приемника 10" ADDRESS="813" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда приемника 11" ADDRESS="814" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда приемника 12" ADDRESS="815" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда приемника 13" ADDRESS="816" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда приемника 14" ADDRESS="817" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда приемника 15" ADDRESS="818" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда приемника 16" ADDRESS="819" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда приемника 17" ADDRESS="820" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда приемника 18" ADDRESS="821" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда приемника 19" ADDRESS="822" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда приемника 20" ADDRESS="823" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда приемника 21" ADDRESS="824" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда приемника 22" ADDRESS="825" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда приемника 23" ADDRESS="826" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда приемника 24" ADDRESS="827" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда приемника 25" ADDRESS="828" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда приемника 26" ADDRESS="829" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда приемника 27" ADDRESS="830" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда приемника 28" ADDRESS="831" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда приемника 29" ADDRESS="832" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда приемника 30" ADDRESS="833" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда приемника 31" ADDRESS="834" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Команда приемника 32" ADDRESS="835" TYPE="1" CAT="1" NAMING="Резерв"/>
+      <POINT NAME="Сигнал защиты ПУСК" ADDRESS="836" TYPE="1" CAT="1" NAMING="Сигнал защиты ПУСК"/>
+      <POINT NAME="Сигнал защиты СТОП" ADDRESS="837" TYPE="1" CAT="1" NAMING="Сигнал защиты СТОП"/>
+      <POINT NAME="Сигнал защиты МАН " ADDRESS="838" TYPE="1" CAT="1" NAMING="Сигнал защиты МАН "/>
+      <POINT NAME="Сигнал защиты ПРМ " ADDRESS="839" TYPE="1" CAT="1" NAMING="Сигнал защиты ПРМ "/>
+      <POINT NAME="Сигнал защиты ПРД " ADDRESS="840" TYPE="1" CAT="1" NAMING="Сигнал защиты ПРД "/>
+      <POINT NAME="Сигнал защиты ВЫХ " ADDRESS="841" TYPE="1" CAT="1" NAMING="Сигнал защиты ВЫХ "/>
     </POINTS>
     <COMMANDS/>
   </DEVICE>
