@@ -1,7 +1,7 @@
 ARIS-2805
 ============
 
-Прошивки для ARIS-2805.
+[Прошивки для ARIS-2805](https://confluence.prosyst.ru/pages/viewpage.action?pageId=71600433)
 
 - **[Типовой шкаф](Типовой шкаф/README.md)**
 - **[A1 Чебоксарская ГЭС](A1 Чебоксарская ГЭС/README.md)**
