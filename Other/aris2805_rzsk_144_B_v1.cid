@@ -45,7 +45,7 @@
                 <Val>ARIS-28xx</Val>
               </DAI>
               <DAI name="configRev">
-                <Val>9</Val>
+                <Val>11</Val>
               </DAI>
               <DAI name="ldNs">
                 <Val>IEC 61850-7-4:2003</Val>
@@ -266,6 +266,10 @@
       <DO desc="Приемник режим Введен" transient="false" type="SPS_0" name="RxEn"/>
       <DO desc="Неисправность" transient="false" type="SPS_0" name="Alarm"/>
       <DO desc="Предупреждение" transient="false" type="SPS_0" name="Warn"/>
+      <DO desc="Низкое напр вых" transient="false" type="SPS_0" name="TxLowF"/>
+      <DO desc="Высокое напр вых" transient="false" type="SPS_0" name="TxHiF"/>
+      <DO desc="Нет КС" transient="false" type="SPS_0" name="RxSecF"/>
+      <DO desc="Нет сигнала РЗ" transient="false" type="SPS_0" name="RxDefF"/>
     </LNodeType>
     <DOType id="SPS_0" cdc="SPS" desc="Однопозиционный объект, только состояние">
       <DA name="stVal" fc="ST" bType="BOOLEAN"/>
