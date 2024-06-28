@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?><SCL xmlns="http://www.iec.ch/61850/2003/SCL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iec.ch/61850/2003/SCL SCL.xsd" version="2007" revision="A">
+  <Header id="ARIS_C303"/>
+  <Communication>
+    <SubNetwork name="SubNetworkARIS">
+      <ConnectedAP iedName="ARIS_C303" apName="AP_ARIS">
+      </ConnectedAP>
+    </SubNetwork>
+  </Communication>
+  <IED name="ARIS_C303" desc="ARIS_C303" type="ARIS" manufacturer="Prosoft Systems" configVersion="1.0.0" originalSclVersion="2007" originalSclRevision="A">
+    <Services>
+      <DynAssociation/>
+      <GetDirectory/>
+      <GetDataObjectDefinition/>
+      <DataObjectDirectory/>
+      <GetDataSetValue/>
+      <SetDataSetValue/>
+      <DataSetDirectory/>
+      <ConfDataSet max="15" modify="true"/>
+      <DynDataSet max="15"/>
+      <ReadWrite/>
+      <ConfReportControl max="15"/>
+      <GetCBValues/>
+      <ConfLNs fixLnInst="true" fixPrefix="true"/>
+      <ConfLdName/>
+      <GOOSE max="1"/>
+    </Services>
+    <AccessPoint name="AP_ARIS">
+      <Server>
+        <Authentication none="true"/>
+        <LDevice inst="Controller">
+          <LN0 lnClass="LLN0" lnType="LN0" inst="">
+            <DOI name="Mod">
+              <DAI name="ctlModel">
+                <Val>status-only</Val>
+              </DAI>
+            </DOI>
+            <DOI name="NamPlt">
+              <DAI name="vendor">
+                <Val>Prosoft Systems</Val>
+              </DAI>
+              <DAI name="swRev">
+                <Val>1.9.162.249654870U /M1.4.1</Val>
+              </DAI>
+              <DAI name="d">
+                <Val>ARIS-28xx</Val>
+              </DAI>
+              <DAI name="configRev">
+                <Val>11</Val>
+              </DAI>
+              <DAI name="ldNs">
+                <Val>IEC 61850-7-4:2003</Val>
+              </DAI>
+            </DOI>
+          </LN0>
+          <LN lnType="LPHD_0" inst="0" lnClass="LPHD">
+            <DOI name="PhyNam">
+              <DAI name="vendor">
+                <Val>Prosoft Systems</Val>
+              </DAI>
+              <DAI name="hwRev">
+                <Val>1.9.92</Val>
+              </DAI>
+              <DAI name="swRev">
+                <Val>1.0.2525</Val>
+              </DAI>
+              <DAI name="serNum">
+                <Val>0001</Val>
+              </DAI>
+              <DAI name="model">
+                <Val>ARIS-C303</Val>
+              </DAI>
+            </DOI>
+          </LN>
+          <LN lnType="GGIOex1" prefix="" lnClass="GGIO" inst="1" desc="AVANT"/>
+        </LDevice>
+      </Server>
+    </AccessPoint>
+  </IED>
+  <DataTypeTemplates>
+    <LNodeType id="LN0" lnClass="LLN0">
+      <DO name="Mod" type="INC_0"/>
+      <DO name="Beh" type="ENS_0"/>
+      <DO name="Health" type="ENS_1"/>
+      <DO name="NamPlt" type="LPL_0"/>
+    </LNodeType>
+    <LNodeType id="LPHD_0" lnClass="LPHD">
+      <DO name="PhyHealth" type="INS_2"/>
+      <DO name="Proxy" type="SPS_0"/>
+      <DO name="PhyNam" type="DPL_0"/>
+    </LNodeType>
+    <LNodeType id="GGIOa" lnClass="GGIO" desc="II board 16">
+      <DO name="Mod" type="INC_0"/>
+      <DO name="Beh" type="ENS_0"/>
+      <DO name="Health" type="ENS_1"/>
+      <DO name="NamPlt" type="LPL_1"/>
+      <DO name="AnIn1" type="MV_0"/>
+      <DO name="AnIn2" type="MV_0"/>
+      <DO name="AnIn3" type="MV_0"/>
+      <DO name="AnIn4" type="MV_0"/>
+      <DO name="AnIn5" type="MV_0"/>
+      <DO name="AnIn6" type="MV_0"/>
+      <DO name="AnIn7" type="MV_0"/>
+      <DO name="AnIn8" type="MV_0"/>
+    </LNodeType>
+    <LNodeType id="GGIOb" lnClass="GGIO" desc="DI board 8">
+      <DO name="Mod" type="INC_0"/>
+      <DO name="Beh" type="ENS_0"/>
+      <DO name="Health" type="ENS_1"/>
+      <DO name="NamPlt" type="LPL_1"/>
+      <DO name="Ind1" type="SPS_0"/>
+      <DO name="Ind2" type="SPS_0"/>
+      <DO name="Ind3" type="SPS_0"/>
+      <DO name="Ind4" type="SPS_0"/>
+      <DO name="Ind5" type="SPS_0"/>
+      <DO name="Ind6" type="SPS_0"/>
+      <DO name="Ind7" type="SPS_0"/>
+      <DO name="Ind8" type="SPS_0"/>
+    </LNodeType>
+    <LNodeType id="GGIOp" lnClass="GGIO" desc="DI board 15">
+      <DO name="Mod" type="INC_0"/>
+      <DO name="Beh" type="ENS_0"/>
+      <DO name="Health" type="ENS_1"/>
+      <DO name="NamPlt" type="LPL_1"/>
+      <DO name="Ind1" type="SPS_0"/>
+      <DO name="Ind2" type="SPS_0"/>
+      <DO name="Ind3" type="SPS_0"/>
+      <DO name="Ind4" type="SPS_0"/>
+      <DO name="Ind5" type="SPS_0"/>
+      <DO name="Ind6" type="SPS_0"/>
+      <DO name="Ind7" type="SPS_0"/>
+      <DO name="Ind8" type="SPS_0"/>
+      <DO name="Ind9" type="SPS_0"/>
+      <DO name="Ind10" type="SPS_0"/>
+      <DO name="Ind11" type="SPS_0"/>
+      <DO name="Ind12" type="SPS_0"/>
+      <DO name="Ind13" type="SPS_0"/>
+      <DO name="Ind14" type="SPS_0"/>
+      <DO name="Ind15" type="SPS_0"/>
+    </LNodeType>
+    <LNodeType id="GGIOm" lnClass="GGIO" desc="Direct Measurements board Fast measurement">
+      <DO name="Mod" type="INC_0"/>
+      <DO name="Beh" type="ENS_0"/>
+      <DO name="Health" type="ENS_1"/>
+      <DO name="NamPlt" type="LPL_1"/>
+      <DO name="AnIn1" type="MV_0"/>
+      <DO name="AnIn2" type="MV_0"/>
+      <DO name="AnIn3" type="MV_0"/>
+      <DO name="AnIn4" type="MV_0"/>
+      <DO name="AnIn5" type="MV_0"/>
+      <DO name="AnIn6" type="MV_0"/>
+    </LNodeType>
+    <LNodeType id="GGIOc" lnClass="GGIO" desc="DO board 8">
+      <DO name="Mod" type="INC_0"/>
+      <DO name="Beh" type="ENS_0"/>
+      <DO name="Health" type="ENS_1"/>
+      <DO name="NamPlt" type="LPL_1"/>
+      <DO name="SPCSO1" type="SPC_2"/>
+      <DO name="SPCSO2" type="SPC_2"/>
+      <DO name="SPCSO3" type="SPC_2"/>
+      <DO name="SPCSO4" type="SPC_2"/>
+      <DO name="SPCSO5" type="SPC_2"/>
+      <DO name="SPCSO6" type="SPC_2"/>
+      <DO name="SPCSO7" type="SPC_2"/>
+      <DO name="SPCSO8" type="SPC_2"/>
+    </LNodeType>
+    <LNodeType id="GGIOd" lnClass="GGIO" desc="TC board 4">
+      <DO name="Mod" type="INC_0"/>
+      <DO name="Beh" type="ENS_0"/>
+      <DO name="Health" type="ENS_1"/>
+      <DO name="NamPlt" type="LPL_1"/>
+      <DO name="SPCSO1" type="SPC_1"/>
+      <DO name="SPCSO2" type="SPC_1"/>
+      <DO name="SPCSO3" type="SPC_1"/>
+      <DO name="SPCSO4" type="SPC_1"/>
+    </LNodeType>
+    <LNodeType id="XCBRa" lnClass="XCBR" desc="Circuit breaker">
+      <DO name="Mod" type="INC_0"/>
+      <DO name="Beh" type="ENS_0"/>
+      <DO name="Health" type="ENS_1"/>
+      <DO name="NamPlt" type="LPL_1"/>
+      <DO name="LocKey" type="SPS_0"/>
+      <DO name="Loc" type="SPS_0"/>
+      <DO name="OpCnt" type="INS_2"/>
+      <DO name="Pos" type="DPC_2"/>
+      <DO name="BlkOpn" type="SPC_1"/>
+      <DO name="BlkCls" type="SPC_1"/>
+      <DO name="CBOpCap" type="INS_2"/>
+    </LNodeType>
+    <LNodeType id="CSWIa" lnClass="CSWI" desc="Circuit breaker controller">
+      <DO name="Mod" type="INC_0"/>
+      <DO name="Beh" type="ENS_0"/>
+      <DO name="Health" type="ENS_1"/>
+      <DO name="NamPlt" type="LPL_1"/>
+      <DO name="Pos" type="DPC_0"/>
+    </LNodeType>
+    <LNodeType id="CSWIb" lnClass="CSWI" desc="Circuit breaker controller">
+      <DO name="Mod" type="INC_0"/>
+      <DO name="Beh" type="ENS_0"/>
+      <DO name="Health" type="ENS_1"/>
+      <DO name="NamPlt" type="LPL_1"/>
+      <DO name="Pos" type="DPC_0"/>
+      <DO name="OpOpn" type="ACT_1"/>
+      <DO name="OpCls" type="ACT_1"/>
+    </LNodeType>
+    <LNodeType id="CILOa" lnClass="CILO" desc="Circuit breaker interlocking">
+      <DO name="Mod" type="INC_0"/>
+      <DO name="Beh" type="ENS_0"/>
+      <DO name="Health" type="ENS_1"/>
+      <DO name="NamPlt" type="LPL_1"/>
+      <DO name="EnaOpn" type="SPS_0"/>
+      <DO name="EnaCls" type="SPS_0"/>
+    </LNodeType>
+    <LNodeType id="XSWIa" lnClass="XSWI" desc="Circuit switch">
+      <DO name="Mod" type="INC_0"/>
+      <DO name="Beh" type="ENS_0"/>
+      <DO name="Health" type="ENS_1"/>
+      <DO name="NamPlt" type="LPL_1"/>
+      <DO name="Loc" type="SPS_0"/>
+      <DO name="OpCnt" type="INS_2"/>
+      <DO name="Pos" type="DPC_2"/>
+      <DO name="BlkOpn" type="SPC_1"/>
+      <DO name="BlkCls" type="SPC_1"/>
+      <DO name="SwTyp" type="ENS_SwTyp"/>
+    </LNodeType>
+    <LNodeType id="MMXUa" lnClass="MMXU" desc="Direct Measurements board">
+      <DO name="Mod" type="INC_0"/>
+      <DO name="Beh" type="ENS_0"/>
+      <DO name="Health" type="ENS_1"/>
+      <DO name="NamPlt" type="LPL_1"/>
+      <DO name="TotW" type="MV_0"/>
+      <DO name="TotVAr" type="MV_0"/>
+      <DO name="TotVA" type="MV_0"/>
+      <DO name="Hz" type="MV_0"/>
+      <DO name="PPV" type="DEL_0"/>
+      <DO name="PNV" type="WYE_0"/>
+      <DO name="A" type="WYE_0"/>
+      <DO name="W" type="WYE_0"/>
+      <DO name="VAr" type="WYE_0"/>
+      <DO name="VA" type="WYE_0"/>
+      <DO name="PF" type="WYE_0"/>
+    </LNodeType>
+    <LNodeType id="MSQIa" lnClass="MSQI" desc="Direct Measurements board Sequences">
+      <DO name="Mod" type="INC_0"/>
+      <DO name="Beh" type="ENS_0"/>
+      <DO name="Health" type="ENS_1"/>
+      <DO name="NamPlt" type="LPL_1"/>
+      <DO name="SeqA" type="SEQ_0"/>
+      <DO name="SeqV" type="SEQ_0"/>
+    </LNodeType>
+    <LNodeType id="GGIOex1" desc="General purpose node" lnClass="GGIO">
+      <DO desc="" transient="false" name="Mod" type="INC_0"/>
+      <DO desc="" transient="false" name="Beh" type="ENS_0"/>
+      <DO desc="" transient="false" name="Health" type="ENS_1"/>
+      <DO desc="" transient="false" name="NamPlt" type="LPL_1"/>
+      <DO desc="Сигн Ком ПРД" transient="false" type="SPS_0" name="TxInd"/>
+      <DO desc="Сигн Ком ПРД1" transient="false" type="SPS_0" name="TxInd1"/>
+      <DO desc="Сигн Ком ПРД2" transient="false" type="SPS_0" name="TxInd2"/>
+      <DO desc="Сигн Ком ПРД3" transient="false" type="SPS_0" name="TxInd3"/>
+      <DO desc="Сигн Ком ПРД4" transient="false" type="SPS_0" name="TxInd4"/>
+      <DO desc="Сигн Ком ПРД5" transient="false" type="SPS_0" name="TxInd5"/>
+      <DO desc="Сигн Ком ПРД6" transient="false" type="SPS_0" name="TxInd6"/>
+      <DO desc="Сигн Ком ПРД7" transient="false" type="SPS_0" name="TxInd7"/>
+      <DO desc="Сигн Ком ПРД8" transient="false" type="SPS_0" name="TxInd8"/>
+      <DO desc="Сигн Ком ПРД9" transient="false" type="SPS_0" name="TxInd9"/>
+      <DO desc="Сигн Ком ПРД10" transient="false" type="SPS_0" name="TxInd10"/>
+      <DO desc="Сигн Ком ПРД11" transient="false" type="SPS_0" name="TxInd11"/>
+      <DO desc="Сигн Ком ПРД12" transient="false" type="SPS_0" name="TxInd12"/>
+      <DO desc="Сигн Ком ПРД13" transient="false" type="SPS_0" name="TxInd13"/>
+      <DO desc="Сигн Ком ПРД14" transient="false" type="SPS_0" name="TxInd14"/>
+      <DO desc="Сигн Ком ПРД15" transient="false" type="SPS_0" name="TxInd15"/>
+      <DO desc="Сигн Ком ПРД16" transient="false" type="SPS_0" name="TxInd16"/>
+      <DO desc="Сигн Ком ПРД17" transient="false" type="SPS_0" name="TxInd17"/>
+      <DO desc="Сигн Ком ПРД18" transient="false" type="SPS_0" name="TxInd18"/>
+      <DO desc="Сигн Ком ПРД19" transient="false" type="SPS_0" name="TxInd19"/>
+      <DO desc="Сигн Ком ПРД20" transient="false" type="SPS_0" name="TxInd20"/>
+      <DO desc="Сигн Ком ПРД21" transient="false" type="SPS_0" name="TxInd21"/>
+      <DO desc="Сигн Ком ПРД22" transient="false" type="SPS_0" name="TxInd22"/>
+      <DO desc="Сигн Ком ПРД23" transient="false" type="SPS_0" name="TxInd23"/>
+      <DO desc="Сигн Ком ПРД24" transient="false" type="SPS_0" name="TxInd24"/>
+      <DO desc="Сигн Ком ПРД25" transient="false" type="SPS_0" name="TxInd25"/>
+      <DO desc="Сигн Ком ПРД26" transient="false" type="SPS_0" name="TxInd26"/>
+      <DO desc="Сигн Ком ПРД27" transient="false" type="SPS_0" name="TxInd27"/>
+      <DO desc="Сигн Ком ПРД28" transient="false" type="SPS_0" name="TxInd28"/>
+      <DO desc="Сигн Ком ПРД29" transient="false" type="SPS_0" name="TxInd29"/>
+      <DO desc="Сигн Ком ПРД30" transient="false" type="SPS_0" name="TxInd30"/>
+      <DO desc="Сигн Ком ПРД31" transient="false" type="SPS_0" name="TxInd31"/>
+      <DO desc="Сигн Ком ПРД32" transient="false" type="SPS_0" name="TxInd32"/>
+      <DO desc="Сигн Ком ПРМ" transient="false" type="SPS_0" name="RxInd"/>
+      <DO desc="Сигн Ком ПРМ1" transient="false" type="SPS_0" name="RxInd1"/>
+      <DO desc="Сигн Ком ПРМ2" transient="false" type="SPS_0" name="RxInd2"/>
+      <DO desc="Сигн Ком ПРМ3" transient="false" type="SPS_0" name="RxInd3"/>
+      <DO desc="Сигн Ком ПРМ4" transient="false" type="SPS_0" name="RxInd4"/>
+      <DO desc="Сигн Ком ПРМ5" transient="false" type="SPS_0" name="RxInd5"/>
+      <DO desc="Сигн Ком ПРМ6" transient="false" type="SPS_0" name="RxInd6"/>
+      <DO desc="Сигн Ком ПРМ7" transient="false" type="SPS_0" name="RxInd7"/>
+      <DO desc="Сигн Ком ПРМ8" transient="false" type="SPS_0" name="RxInd8"/>
+      <DO desc="Сигн Ком ПРМ9" transient="false" type="SPS_0" name="RxInd9"/>
+      <DO desc="Сигн Ком ПРМ10" transient="false" type="SPS_0" name="RxInd10"/>
+      <DO desc="Сигн Ком ПРМ11" transient="false" type="SPS_0" name="RxInd11"/>
+      <DO desc="Сигн Ком ПРМ12" transient="false" type="SPS_0" name="RxInd12"/>
+      <DO desc="Сигн Ком ПРМ13" transient="false" type="SPS_0" name="RxInd13"/>
+      <DO desc="Сигн Ком ПРМ14" transient="false" type="SPS_0" name="RxInd14"/>
+      <DO desc="Сигн Ком ПРМ15" transient="false" type="SPS_0" name="RxInd15"/>
+      <DO desc="Сигн Ком ПРМ16" transient="false" type="SPS_0" name="RxInd16"/>
+      <DO desc="Сигн Ком ПРМ17" transient="false" type="SPS_0" name="RxInd17"/>
+      <DO desc="Сигн Ком ПРМ18" transient="false" type="SPS_0" name="RxInd18"/>
+      <DO desc="Сигн Ком ПРМ19" transient="false" type="SPS_0" name="RxInd19"/>
+      <DO desc="Сигн Ком ПРМ20" transient="false" type="SPS_0" name="RxInd20"/>
+      <DO desc="Сигн Ком ПРМ21" transient="false" type="SPS_0" name="RxInd21"/>
+      <DO desc="Сигн Ком ПРМ22" transient="false" type="SPS_0" name="RxInd22"/>
+      <DO desc="Сигн Ком ПРМ23" transient="false" type="SPS_0" name="RxInd23"/>
+      <DO desc="Сигн Ком ПРМ24" transient="false" type="SPS_0" name="RxInd24"/>
+      <DO desc="Сигн Ком ПРМ25" transient="false" type="SPS_0" name="RxInd25"/>
+      <DO desc="Сигн Ком ПРМ26" transient="false" type="SPS_0" name="RxInd26"/>
+      <DO desc="Сигн Ком ПРМ27" transient="false" type="SPS_0" name="RxInd27"/>
+      <DO desc="Сигн Ком ПРМ28" transient="false" type="SPS_0" name="RxInd28"/>
+      <DO desc="Сигн Ком ПРМ29" transient="false" type="SPS_0" name="RxInd29"/>
+      <DO desc="Сигн Ком ПРМ30" transient="false" type="SPS_0" name="RxInd30"/>
+      <DO desc="Сигн Ком ПРМ31" transient="false" type="SPS_0" name="RxInd31"/>
+      <DO desc="Сигн Ком ПРМ32" transient="false" type="SPS_0" name="RxInd32"/>
+      <DO desc="Передатчик режим Введен" transient="false" type="SPS_0" name="TxEn"/>
+      <DO desc="Приемник режим Введен" transient="false" type="SPS_0" name="RxEn"/>
+      <DO desc="Неисправность" transient="false" type="SPS_0" name="Alarm"/>
+      <DO desc="Предупреждение" transient="false" type="SPS_0" name="Warn"/>
+      <DO desc="Низкое напр вых" transient="false" type="SPS_0" name="TxLowL"/>
+      <DO desc="Высокое напр вых" transient="false" type="SPS_0" name="TxHiL"/>
+      <DO desc="Нет КС" transient="false" type="SPS_0" name="RxSecF"/>
+      <DO desc="Ключ SAC1" transient="false" type="SPS_0" name="RxSAC1"/>
+      <DO desc="Ключ SA1" transient="false" type="SPS_0" name="RxSA1"/>
+      <DO desc="Ключ SA2" transient="false" type="SPS_0" name="RxSA2"/>
+      <DO desc="Ключ SA3" transient="false" type="SPS_0" name="RxSA3"/>
+      <DO desc="Ключ SA4" transient="false" type="SPS_0" name="RxSA4"/>
+      <DO desc="Ключ SA5" transient="false" type="SPS_0" name="RxSA5"/>
+      <DO desc="Ключ SA6" transient="false" type="SPS_0" name="RxSA6"/>
+      <DO desc="Ключ SA7" transient="false" type="SPS_0" name="RxSA7"/>
+      <DO desc="Ключ SA8" transient="false" type="SPS_0" name="RxSA8"/>
+      <DO desc="Ключ SA9" transient="false" type="SPS_0" name="RxSA9"/>
+      <DO desc="Ключ SA10" transient="false" type="SPS_0" name="RxSA10"/>
+      <DO desc="Ключ SA11" transient="false" type="SPS_0" name="RxSA11"/>
+      <DO desc="Ключ SA12" transient="false" type="SPS_0" name="RxSA12"/>
+      <DO desc="Ключ SA13" transient="false" type="SPS_0" name="RxSA13"/>
+      <DO desc="Ключ SA14" transient="false" type="SPS_0" name="RxSA14"/>
+      <DO desc="Ключ SA15" transient="false" type="SPS_0" name="RxSA15"/>
+      <DO desc="Ключ SA16" transient="false" type="SPS_0" name="RxSA16"/>
+      <DO desc="Ключ SA17" transient="false" type="SPS_0" name="RxSA17"/>
+      <DO desc="Ключ SA18" transient="false" type="SPS_0" name="RxSA18"/>
+      <DO desc="Ключ SA19" transient="false" type="SPS_0" name="RxSA19"/>
+      <DO desc="Ключ SA20" transient="false" type="SPS_0" name="RxSA20"/>
+      <DO desc="Ключ SA21" transient="false" type="SPS_0" name="RxSA21"/>
+      <DO desc="Ключ SA22" transient="false" type="SPS_0" name="RxSA22"/>
+      <DO desc="Ключ SA23" transient="false" type="SPS_0" name="RxSA23"/>
+      <DO desc="Ключ SA24" transient="false" type="SPS_0" name="RxSA24"/>
+      <DO desc="Ключ SA25" transient="false" type="SPS_0" name="RxSA25"/>
+      <DO desc="Ключ SA26" transient="false" type="SPS_0" name="RxSA26"/>
+      <DO desc="Ключ SA27" transient="false" type="SPS_0" name="RxSA27"/>
+      <DO desc="Ключ SA28" transient="false" type="SPS_0" name="RxSA28"/>
+      <DO desc="Ключ SA29" transient="false" type="SPS_0" name="RxSA29"/>
+      <DO desc="Ключ SA30" transient="false" type="SPS_0" name="RxSA30"/>
+      <DO desc="Ключ SA31" transient="false" type="SPS_0" name="RxSA31"/>
+      <DO desc="Ключ SA32" transient="false" type="SPS_0" name="RxSA32"/>
+    </LNodeType>
+    <DOType id="SPS_0" cdc="SPS" desc="Однопозиционный объект, только состояние">
+      <DA name="stVal" fc="ST" bType="BOOLEAN"/>
+      <DA name="q" fc="ST" bType="Quality"/>
+      <DA name="t" fc="ST" bType="Timestamp"/>
+      <DA name="subEna" fc="SV" bType="BOOLEAN"/>
+      <DA name="subVal" fc="SV" bType="BOOLEAN"/>
+      <DA name="subQ" fc="SV" bType="Quality"/>
+      <DA name="subID" fc="SV" bType="VisString64"/>
+      <DA name="d" fc="DC" bType="VisString255"/>
+    </DOType>
+    <DOType id="SPC_1" cdc="SPC" desc="Однопозиционный управляемый объект, S\E">
+      <DA name="origin" bType="Struct" type="Originator_0" fc="ST"/>
+      <DA name="stVal" fc="ST" bType="BOOLEAN"/>
+      <DA name="q" fc="ST" bType="Quality"/>
+      <DA name="t" fc="ST" bType="Timestamp"/>
+      <DA name="subEna" fc="SV" bType="BOOLEAN"/>
+      <DA name="subVal" fc="SV" bType="BOOLEAN"/>
+      <DA name="subQ" fc="SV" bType="Quality"/>
+      <DA name="subID" fc="SV" bType="VisString64"/>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="ctlModel"/>
+      <DA name="SBOw" fc="CO" bType="Struct" type="OperBOOL_0"/>
+      <DA name="Oper" fc="CO" bType="Struct" type="OperBOOL_0"/>
+      <DA name="Cancel" fc="CO" bType="Struct" type="CancelBOOL_0"/>
+      <DA name="d" fc="DC" bType="VisString255"/>
+    </DOType>
+    <DOType id="SPC_0" cdc="SPC" desc="Однопозиционный управляемый объект, прямое">
+      <DA name="origin" bType="Struct" type="Originator_0" fc="ST"/>
+      <DA name="stVal" fc="ST" bType="BOOLEAN"/>
+      <DA name="q" fc="ST" bType="Quality"/>
+      <DA name="t" fc="ST" bType="Timestamp"/>
+      <DA name="subEna" fc="SV" bType="BOOLEAN"/>
+      <DA name="subVal" fc="SV" bType="BOOLEAN"/>
+      <DA name="subQ" fc="SV" bType="Quality"/>
+      <DA name="subID" fc="SV" bType="VisString64"/>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="ctlModel"/>
+      <DA name="Oper" fc="CO" bType="Struct" type="OperBOOL_0"/>
+      <DA name="d" fc="DC" bType="VisString255"/>
+    </DOType>
+    <DOType id="SPC_2" cdc="SPC" desc="Однопозиционный управляемый объект, только состояние">
+      <DA name="stVal" fc="ST" bType="BOOLEAN"/>
+      <DA name="q" fc="ST" bType="Quality"/>
+      <DA name="t" fc="ST" bType="Timestamp"/>
+      <DA name="subEna" fc="SV" bType="BOOLEAN"/>
+      <DA name="subVal" fc="SV" bType="BOOLEAN"/>
+      <DA name="subQ" fc="SV" bType="Quality"/>
+      <DA name="subID" fc="SV" bType="VisString64"/>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="ctlModel"/>
+      <DA name="d" fc="DC" bType="VisString255"/>
+    </DOType>
+    <DOType id="DPC_0" cdc="DPC" desc="Двухпозиционный управляемый объект, S\E">
+      <DA name="origin" bType="Struct" type="Originator_0" fc="ST"/>
+      <DA name="stVal" fc="ST" bType="Dbpos" type="Dbpos"/>
+      <DA name="q" fc="ST" bType="Quality"/>
+      <DA name="t" fc="ST" bType="Timestamp"/>
+      <DA name="subEna" fc="SV" bType="BOOLEAN"/>
+      <DA name="subVal" fc="SV" bType="Dbpos" type="Dbpos"/>
+      <DA name="subQ" fc="SV" bType="Quality"/>
+      <DA name="subID" fc="SV" bType="VisString64"/>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="ctlModel"/>
+      <DA name="SBOw" fc="CO" bType="Struct" type="OperBOOL_0"/>
+      <DA name="Oper" fc="CO" bType="Struct" type="OperBOOL_0"/>
+      <DA name="Cancel" fc="CO" bType="Struct" type="CancelBOOL_0"/>
+      <DA name="d" fc="DC" bType="VisString255"/>
+    </DOType>
+    <DOType id="DPC_1" cdc="DPC" desc="Двухпозиционный управляемый объект, прямое">
+      <DA name="origin" bType="Struct" type="Originator_0" fc="ST"/>
+      <DA name="stVal" bType="Dbpos" fc="ST" type="Dbpos"/>
+      <DA name="q" bType="Quality" fc="ST"/>
+      <DA name="t" bType="Timestamp" fc="ST"/>
+      <DA name="subEna" fc="SV" bType="BOOLEAN"/>
+      <DA name="subVal" fc="SV" bType="Dbpos" type="Dbpos"/>
+      <DA name="subQ" fc="SV" bType="Quality"/>
+      <DA name="subID" fc="SV" bType="VisString64"/>
+      <DA name="ctlModel" bType="Enum" type="ctlModel" fc="CF"/>
+      <DA name="Oper" bType="Struct" type="OperBOOL_0" fc="CO"/>
+      <DA name="d" bType="VisString255" fc="DC"/>
+    </DOType>
+    <DOType id="DPC_2" cdc="DPC" desc="Двухпозиционный управляемый объект, только состояние">
+      <DA name="stVal" bType="Dbpos" fc="ST" type="Dbpos"/>
+      <DA name="q" bType="Quality" fc="ST"/>
+      <DA name="t" bType="Timestamp" fc="ST"/>
+      <DA name="subEna" fc="SV" bType="BOOLEAN"/>
+      <DA name="subVal" fc="SV" bType="Dbpos" type="Dbpos"/>
+      <DA name="subQ" fc="SV" bType="Quality"/>
+      <DA name="subID" fc="SV" bType="VisString64"/>
+      <DA name="ctlModel" bType="Enum" type="ctlModel" fc="CF"/>
+      <DA name="d" bType="VisString255" fc="DC"/>
+    </DOType>
+    <DOType id="ENS_0" cdc="ENS">
+      <DA name="stVal" fc="ST" bType="Enum" type="Beh"/>
+      <DA name="q" fc="ST" bType="Quality"/>
+      <DA name="t" fc="ST" bType="Timestamp"/>
+      <DA name="subEna" fc="SV" bType="BOOLEAN"/>
+      <DA name="subVal" fc="SV" bType="Enum" type="Beh"/>
+      <DA name="subQ" fc="SV" bType="Quality"/>
+      <DA name="subID" fc="SV" bType="VisString64"/>
+      <DA name="d" fc="DC" bType="VisString255"/>
+    </DOType>
+    <DOType id="ENS_1" cdc="ENS">
+      <DA name="stVal" fc="ST" bType="Enum" type="Health"/>
+      <DA name="q" fc="ST" bType="Quality"/>
+      <DA name="t" fc="ST" bType="Timestamp"/>
+      <DA name="subEna" fc="SV" bType="BOOLEAN"/>
+      <DA name="subVal" fc="SV" bType="Enum" type="Health"/>
+      <DA name="subQ" fc="SV" bType="Quality"/>
+      <DA name="subID" fc="SV" bType="VisString64"/>
+      <DA name="d" fc="DC" bType="VisString255"/>
+    </DOType>
+    <DOType id="INS_2" cdc="INS">
+      <DA name="stVal" fc="ST" bType="INT32"/>
+      <DA name="q" fc="ST" bType="Quality"/>
+      <DA name="t" fc="ST" bType="Timestamp"/>
+      <DA name="subEna" fc="SV" bType="BOOLEAN"/>
+      <DA name="subVal" fc="SV" bType="INT32"/>
+      <DA name="subQ" fc="SV" bType="Quality"/>
+      <DA name="subID" fc="SV" bType="VisString64"/>
+      <DA name="d" fc="DC" bType="VisString255"/>
+    </DOType>
+    <DOType id="ENS_SwTyp" cdc="ENS">
+      <DA name="stVal" dchg="true" fc="ST" bType="Enum" type="SwTyp"/>
+      <DA name="q" fc="ST" bType="Quality"/>
+      <DA name="t" fc="ST" bType="Timestamp"/>
+    </DOType>
+    <DOType id="ENS_SwOpCap" cdc="ENS">
+      <DA name="stVal" dchg="true" fc="ST" bType="Enum" type="ShOpCap"/>
+      <DA name="q" fc="ST" bType="Quality"/>
+      <DA name="t" fc="ST" bType="Timestamp"/>
+    </DOType>
+    <DOType id="LPL_0" cdc="LPL">
+      <DA name="vendor" fc="DC" bType="VisString255"/>
+      <DA name="swRev" fc="DC" bType="VisString255"/>
+      <DA name="d" fc="DC" bType="VisString255"/>
+      <DA name="configRev" fc="DC" bType="VisString255"/>
+      <DA name="ldNs" fc="DC" bType="VisString255"/>
+    </DOType>
+    <DOType id="LPL_1" cdc="LPL">
+      <DA name="vendor" fc="DC" bType="VisString255"/>
+      <DA name="swRev" fc="DC" bType="VisString255"/>
+      <DA name="d" fc="DC" bType="VisString255"/>
+    </DOType>
+    <DOType id="MV_0" cdc="MV" desc="Измерение">
+      <DA name="instMag" fc="MX" bType="Struct" type="AnalogueValue_0"/>
+      <DA name="mag" fc="MX" bType="Struct" type="AnalogueValue_0"/>
+      <DA name="q" fc="MX" bType="Quality"/>
+      <DA name="t" fc="MX" bType="Timestamp"/>
+      <DA name="subEna" fc="SV" bType="BOOLEAN"/>
+      <DA name="subMag" fc="SV" bType="Struct" type="AnalogueValue_0"/>
+      <DA name="subQ" fc="SV" bType="Quality"/>
+      <DA name="subID" fc="SV" bType="VisString64"/>
+      <DA name="d" fc="DC" bType="VisString255"/>
+    </DOType>
+    <DOType id="CMV_0" cdc="CMV" desc="Измерение векторное">
+      <DA name="instCVal" fc="MX" bType="Struct" type="Vector_0"/>
+      <DA name="cVal" fc="MX" bType="Struct" type="Vector_0"/>
+      <DA name="q" fc="MX" bType="Quality"/>
+      <DA name="t" fc="MX" bType="Timestamp"/>
+      <DA name="subEna" fc="SV" bType="BOOLEAN"/>
+      <DA name="subCVal" fc="SV" bType="Struct" type="Vector_0"/>
+      <DA name="subQ" fc="SV" bType="Quality"/>
+      <DA name="subID" fc="SV" bType="VisString64"/>
+      <DA name="d" fc="DC" bType="VisString255"/>
+    </DOType>
+    <DOType id="WYE_0" cdc="WYE">
+      <SDO name="phsA" type="CMV_0"/>
+      <SDO name="phsB" type="CMV_0"/>
+      <SDO name="phsC" type="CMV_0"/>
+      <DA name="d" fc="DC" bType="VisString255"/>
+    </DOType>
+    <DOType id="DEL_0" cdc="DEL">
+      <SDO name="phsAB" type="CMV_0"/>
+      <SDO name="phsBC" type="CMV_0"/>
+      <SDO name="phsCA" type="CMV_0"/>
+      <DA name="d" fc="DC" bType="VisString255"/>
+    </DOType>
+    <DOType id="SEQ_0" cdc="SEQ">
+      <SDO name="c1" type="CMV_0"/>
+      <SDO name="c2" type="CMV_0"/>
+      <SDO name="c3" type="CMV_0"/>
+      <DA name="seqT" fc="MX" bType="Enum" type="seqT"/>
+      <DA name="d" fc="DC" bType="VisString255"/>
+    </DOType>
+    <DOType id="INC_0" cdc="INC">
+      <DA name="Oper" fc="CO" bType="Struct" type="OperINT_0"/>
+      <DA name="stVal" fc="ST" bType="INT32"/>
+      <DA name="q" fc="ST" bType="Quality"/>
+      <DA name="t" fc="ST" bType="Timestamp"/>
+      <DA name="subEna" fc="SV" bType="BOOLEAN"/>
+      <DA name="subVal" fc="SV" bType="INT32"/>
+      <DA name="subQ" fc="SV" bType="Quality"/>
+      <DA name="subID" fc="SV" bType="VisString64"/>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="ctlModel"/>
+      <DA name="d" fc="DC" bType="VisString255"/>
+    </DOType>
+    <DOType id="DPL_0" cdc="DPL">
+      <DA name="vendor" fc="DC" bType="VisString255"/>
+      <DA name="hwRev" fc="DC" bType="VisString255"/>
+      <DA name="swRev" fc="DC" bType="VisString255"/>
+      <DA name="serNum" fc="DC" bType="VisString255"/>
+      <DA name="model" fc="DC" bType="VisString255"/>
+      <DA name="d" fc="DC" bType="VisString255"/>
+    </DOType>
+    <DOType id="ACT_1" cdc="ACT">
+      <DA name="general" bType="BOOLEAN" fc="ST" dchg="true"/>
+      <DA name="q" bType="Quality" fc="ST" qchg="true"/>
+      <DA name="t" bType="Timestamp" fc="ST"/>
+    </DOType>
+    <DAType id="AnalogueValue_0">
+      <BDA name="f" bType="FLOAT32"/>
+    </DAType>
+    <DAType id="Vector_0">
+      <BDA name="mag" bType="Struct" type="AnalogueValue_0"/>
+    </DAType>
+    <DAType id="Originator_0">
+      <BDA name="orCat" bType="Enum" type="orCat"/>
+      <BDA name="orIdent" bType="Octet64"/>
+    </DAType>
+    <DAType id="OperBOOL_0">
+      <BDA name="ctlVal" bType="BOOLEAN"/>
+      <BDA name="origin" bType="Struct" type="Originator_0"/>
+      <BDA name="ctlNum" bType="INT8U"/>
+      <BDA name="T" bType="Timestamp"/>
+      <BDA name="Test" bType="BOOLEAN"/>
+      <BDA name="Check" bType="Check"/>
+    </DAType>
+    <DAType id="CancelBOOL_0">
+      <BDA name="ctlVal" bType="BOOLEAN"/>
+      <BDA name="origin" bType="Struct" type="Originator_0"/>
+      <BDA name="ctlNum" bType="INT8U"/>
+      <BDA name="T" bType="Timestamp"/>
+      <BDA name="Test" bType="BOOLEAN"/>
+    </DAType>
+    <DAType id="OperINT_0">
+      <BDA name="ctlVal" bType="INT32"/>
+      <BDA name="origin" bType="Struct" type="Originator_0"/>
+      <BDA name="ctlNum" bType="INT8U"/>
+      <BDA name="T" bType="Timestamp"/>
+      <BDA name="Test" bType="BOOLEAN"/>
+      <BDA name="Check" bType="Check"/>
+    </DAType>
+    <EnumType id="ctlModel">
+      <EnumVal ord="0">status-only</EnumVal>
+      <EnumVal ord="1">direct-with-normal-security</EnumVal>
+      <EnumVal ord="2">sbo-with-normal-security</EnumVal>
+      <EnumVal ord="3">direct-with-enhanced-security</EnumVal>
+      <EnumVal ord="4">sbo-with-enhanced-security</EnumVal>
+    </EnumType>
+    <EnumType id="SwTyp">
+      <EnumVal ord="1">Load Break</EnumVal>
+      <EnumVal ord="2">Disconnector</EnumVal>
+      <EnumVal ord="3">Earthing Switch</EnumVal>
+      <EnumVal ord="4">High Speed Earthing Switch</EnumVal>
+    </EnumType>
+    <EnumType id="ShOpCap">
+      <EnumVal ord="1">None</EnumVal>
+      <EnumVal ord="2">Open</EnumVal>
+      <EnumVal ord="3">Close</EnumVal>
+      <EnumVal ord="4">Open and Close</EnumVal>
+    </EnumType>
+    <EnumType id="Beh">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="Mod">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="Health">
+      <EnumVal ord="1">Ok</EnumVal>
+      <EnumVal ord="2">Warning</EnumVal>
+      <EnumVal ord="3">Alarm</EnumVal>
+    </EnumType>
+    <EnumType id="orCat">
+      <EnumVal ord="0">not-supported</EnumVal>
+      <EnumVal ord="1">bay-control</EnumVal>
+      <EnumVal ord="2">station-control</EnumVal>
+      <EnumVal ord="3">remote-control</EnumVal>
+      <EnumVal ord="4">automatic-bay</EnumVal>
+      <EnumVal ord="5">automatic-station</EnumVal>
+      <EnumVal ord="6">automatic-remote</EnumVal>
+      <EnumVal ord="7">maintenance</EnumVal>
+      <EnumVal ord="8">process</EnumVal>
+    </EnumType>
+    <EnumType id="Dbpos">
+      <EnumVal ord="0">intermediate</EnumVal>
+      <EnumVal ord="1">off</EnumVal>
+      <EnumVal ord="2">on</EnumVal>
+      <EnumVal ord="3">bad</EnumVal>
+    </EnumType>
+    <EnumType id="seqT">
+      <EnumVal ord="0">pos-neg-zero</EnumVal>
+      <EnumVal ord="1">dir-quad-zero</EnumVal>
+    </EnumType>
+  </DataTypeTemplates>
+</SCL>
